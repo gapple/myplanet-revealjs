@@ -309,6 +309,8 @@ body {
       background-image: url("../../lib/myplanet/patterns/molecules/logo.svg"); }
   .reveal.pattern--molecules .slides section.title {
     background-color: #872E27; }
+  .reveal.pattern--molecules .progress span {
+    background: #872E27; }
 
 .reveal.pattern--night-sky {
   background-image: url("../../lib/myplanet/patterns/night-sky/pattern.svg"); }
@@ -318,6 +320,8 @@ body {
       background-image: url("../../lib/myplanet/patterns/night-sky/logo.svg"); }
   .reveal.pattern--night-sky .slides section.title {
     background-color: #0D7D7F; }
+  .reveal.pattern--night-sky .progress span {
+    background: #0D7D7F; }
 
 .reveal.pattern--orange-river {
   background-image: url("../../lib/myplanet/patterns/orange-river/pattern.svg"); }
@@ -327,6 +331,8 @@ body {
       background-image: url("../../lib/myplanet/patterns/orange-river/logo.svg"); }
   .reveal.pattern--orange-river .slides section.title {
     background-color: #872E27; }
+  .reveal.pattern--orange-river .progress span {
+    background: #872E27; }
 
 .reveal.pattern--playground {
   background-image: url("../../lib/myplanet/patterns/playground/pattern.svg"); }
@@ -336,6 +342,8 @@ body {
       background-image: url("../../lib/myplanet/patterns/playground/logo.svg"); }
   .reveal.pattern--playground .slides section.title {
     background-color: #8E3E28; }
+  .reveal.pattern--playground .progress span {
+    background: #8E3E28; }
 
 .reveal.pattern--stream {
   background-image: url("../../lib/myplanet/patterns/stream/pattern.svg"); }
@@ -345,6 +353,8 @@ body {
       background-image: url("../../lib/myplanet/patterns/stream/logo.svg"); }
   .reveal.pattern--stream .slides section.title {
     background-color: #0D7D7F; }
+  .reveal.pattern--stream .progress span {
+    background: #0D7D7F; }
 
 .grid-wrapper {
   display: grid; }

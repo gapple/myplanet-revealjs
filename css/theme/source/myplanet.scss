@@ -106,6 +106,9 @@ body {
 		.slides section.title {
 			background-color: map-get($pattern-settings, 'title-bg');
 		}
+		.progress span {
+			background: map-get($pattern-settings, 'title-bg');
+		}
 	}
 }
 
