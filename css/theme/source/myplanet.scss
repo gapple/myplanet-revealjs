@@ -17,7 +17,7 @@ $backgroundColor: #fff;
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFontSize: 2.3vmin;
+$mainFontSize: 1em;
 $mainFont: 'Poppins', 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'Poppins', 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
@@ -49,6 +49,7 @@ $viewport-wide: "min-width: 1280px";
 
 $white: #FFFFFF;
 $light-grey: #EEEDEF;
+$grey: #66646B;
 $radiant: #F25930;
 $ice: #9292A8;
 $midnight: #2A2A49;
@@ -76,8 +77,12 @@ $patterns: (
 	),
 );
 
+
+body {
+	font-size: 2.3vmin;
+}
 @media (#{$viewport-small}) {
-	.reveal {
+	body {
 		font-size: 16px;
 	}
 }
@@ -121,6 +126,11 @@ $patterns: (
 .reveal .slides section {
 	box-sizing: border-box;
 	padding: 0;
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+	display: block;
 }
 
 .reveal section img {
@@ -253,7 +263,6 @@ $patterns: (
 
 	background-color: $white;
 	color: $midnight;
-	padding: 0;
 	text-align: left;
 
 	.grid-wrapper {
@@ -326,6 +335,107 @@ $patterns: (
 			color: $white;
 		}
 		.description {
+			color: $light-grey;
+		}
+	}
+}
+
+.reveal .slides section.quote {
+	@include section();
+
+	background-color: $white;
+	color: $midnight;
+	text-align: left;
+
+	.grid-wrapper {
+		box-sizing: border-box;
+		grid-template-areas: "header" "content";
+		grid-template-rows: 40px 1fr ;
+		height: 100%;
+		padding: 10vmin;
+	}
+
+	.logo {
+		background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
+		background-repeat: no-repeat;
+		background-size: 40px 40px;
+		grid-area: header;
+		height: 40px;
+		width: 40px;
+	}
+
+	blockquote {
+		align-self: center;
+		background: none;
+		color: $grey;
+		border: none;
+		box-shadow: none;
+		font-size: 2em;
+		font-style: normal;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	hr {
+		border: solid $ice;
+		border-width: 1px 0 0 0;
+		margin: .8em 0;
+		width: 10%;
+	}
+	cite {
+		color: $ice;
+		display: block;
+		font-size: 1rem;
+	}
+
+	@at-root #{&}--midnight {
+		background-color: $midnight;
+		color: $white;
+
+		.logo {
+			background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
+		}
+		blockquote {
+			color: $white;
+		}
+		hr {
+			border-color: $light-grey;
+		}
+		cite {
+			color: $light-grey;
+		}
+	}
+	@at-root #{&}--ice {
+		background-color: $ice;
+		color: $white;
+
+		.logo {
+			background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
+		}
+		blockquote {
+			color: $white;
+		}
+		hr {
+			border-color: $light-grey;
+		}
+		cite {
+			color: $light-grey;
+		}
+	}
+	@at-root #{&}--radiant {
+		background-color: $radiant;
+		color: $white;
+
+		.logo {
+			background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
+		}
+		blockquote {
+			color: $white;
+		}
+		hr {
+			border-color: $light-grey;
+		}
+		cite {
 			color: $light-grey;
 		}
 	}

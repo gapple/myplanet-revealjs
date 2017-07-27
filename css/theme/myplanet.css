@@ -15,7 +15,7 @@ body {
 
 .reveal {
   font-family: "Poppins", "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 2.3vmin;
+  font-size: 1em;
   font-weight: normal;
   color: #222; }
 
@@ -290,8 +290,11 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
+body {
+  font-size: 2.3vmin; }
+
 @media (max-width: 768px) {
-  .reveal {
+  body {
     font-size: 16px; } }
 
 .reveal[class*="pattern--"] {
@@ -358,6 +361,10 @@ body {
 .reveal .slides section {
   box-sizing: border-box;
   padding: 0; }
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: block; }
 
 .reveal section img {
   background: none;
@@ -450,7 +457,6 @@ body {
   width: 100vw;
   background-color: #FFFFFF;
   color: #2A2A49;
-  padding: 0;
   text-align: left; }
   .reveal .slides section.subsection .grid-wrapper {
     box-sizing: border-box;
@@ -501,6 +507,80 @@ body {
     .reveal .slides section.subsection--radiant h1 {
       color: #FFFFFF; }
     .reveal .slides section.subsection--radiant .description {
+      color: #EEEDEF; }
+
+.reveal .slides section.quote {
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+  background-color: #FFFFFF;
+  color: #2A2A49;
+  text-align: left; }
+  .reveal .slides section.quote .grid-wrapper {
+    box-sizing: border-box;
+    grid-template-areas: "header" "content";
+    grid-template-rows: 40px 1fr;
+    height: 100%;
+    padding: 10vmin; }
+  .reveal .slides section.quote .logo {
+    background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    grid-area: header;
+    height: 40px;
+    width: 40px; }
+  .reveal .slides section.quote blockquote {
+    align-self: center;
+    background: none;
+    color: #66646B;
+    border: none;
+    box-shadow: none;
+    font-size: 2em;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  .reveal .slides section.quote hr {
+    border: solid #9292A8;
+    border-width: 1px 0 0 0;
+    margin: .8em 0;
+    width: 10%; }
+  .reveal .slides section.quote cite {
+    color: #9292A8;
+    display: block;
+    font-size: 1rem; }
+  .reveal .slides section.quote--midnight {
+    background-color: #2A2A49;
+    color: #FFFFFF; }
+    .reveal .slides section.quote--midnight .logo {
+      background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
+    .reveal .slides section.quote--midnight blockquote {
+      color: #FFFFFF; }
+    .reveal .slides section.quote--midnight hr {
+      border-color: #EEEDEF; }
+    .reveal .slides section.quote--midnight cite {
+      color: #EEEDEF; }
+  .reveal .slides section.quote--ice {
+    background-color: #9292A8;
+    color: #FFFFFF; }
+    .reveal .slides section.quote--ice .logo {
+      background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
+    .reveal .slides section.quote--ice blockquote {
+      color: #FFFFFF; }
+    .reveal .slides section.quote--ice hr {
+      border-color: #EEEDEF; }
+    .reveal .slides section.quote--ice cite {
+      color: #EEEDEF; }
+  .reveal .slides section.quote--radiant {
+    background-color: #F25930;
+    color: #FFFFFF; }
+    .reveal .slides section.quote--radiant .logo {
+      background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
+    .reveal .slides section.quote--radiant blockquote {
+      color: #FFFFFF; }
+    .reveal .slides section.quote--radiant hr {
+      border-color: #EEEDEF; }
+    .reveal .slides section.quote--radiant cite {
       color: #EEEDEF; }
 
 .reveal .slides section.end {
