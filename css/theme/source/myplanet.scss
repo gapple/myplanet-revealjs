@@ -153,6 +153,12 @@ body {
 	}
 }
 
+.reveal .slides section {
+	@include section();
+
+	background: $white;
+}
+
 .reveal .slides section.intro {
 	@include section(4vmin);
 

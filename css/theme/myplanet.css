@@ -372,6 +372,12 @@ body {
   box-shadow: none;
   margin: 0; }
 
+.reveal .slides section {
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+  background: #FFFFFF; }
+
 .reveal .slides section.intro {
   height: calc(100vh - 8vmin);
   margin: 4vmin;
