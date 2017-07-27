@@ -1,0 +1,292 @@
+/**
+ * Myplanet theme for reveal.js.
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/poppins/poppins.css);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 16px;
+$mainFont: 'Poppins', 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Poppins', 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+$viewport-tiny: "max-width: 568px";
+$viewport-small: "max-width: 768px";
+$viewport-large-only: "min-width: 769px";
+
+$white: #FFFFFF;
+$radiant: #F25930;
+$ice: #9292A8;
+$midnight: #2A2A49;
+$light-grey: #EEEDEF;
+
+$patterns: (
+	'molecules': (
+		'intro-bg': #FAFAFA,
+		'title-bg': #872E27,
+	),
+	'night-sky': (
+		'intro-bg': #DEF9F6,
+		'title-bg': #0D7D7F,
+	),
+	'orange-river': (
+		'intro-bg': #FFEDE9,
+		'title-bg': #872E27,
+	),
+	'playground': (
+		'intro-bg': #FCECDB,
+		'title-bg': #8E3E28,
+	),
+	'stream': (
+		'intro-bg': #DEF9F6,
+		'title-bg': #0D7D7F,
+	),
+);
+
+@each $pattern-name, $pattern-settings in $patterns {
+	.pattern--#{$pattern-name} {
+		background-image: url('../../lib/myplanet/patterns/#{$pattern-name}/pattern.svg');
+		background-size: cover;
+
+		.slides section.intro {
+			background: map-get($pattern-settings, 'intro-bg');
+
+			.logo {
+				background: url("../../lib/myplanet/patterns/#{$pattern-name}/logo.svg");
+			}
+		}
+		.slides section.title {
+			background: map-get($pattern-settings, 'title-bg');
+		}
+	}
+}
+
+.grid-wrapper {
+	display: grid;
+}
+
+.reveal .slides > section.past,
+.reveal .slides > section.future,
+.reveal .slides > section > section.past,
+.reveal .slides > section > section.future {
+	opacity: 1;
+}
+
+.reveal section img {
+	background: none;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+}
+
+.reveal .slides section.intro {
+	$margin: 4vmin;
+
+	box-sizing: border-box;
+	height: calc(100vh - #{2 * $margin});
+	margin: $margin;
+	padding: 0;
+	width: calc(100vw - #{2 * $margin});
+
+	@media (#{$viewport-small}) {
+		$margin: 2vmin;
+
+		height: calc(100vh - #{2 * $margin});
+		margin: $margin;
+		width: calc(100vw - #{2 * $margin});
+	}
+
+	.logo-wrapper {
+		display: flex;
+		height: 100%;
+	}
+
+	.logo {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin: auto;
+		min-height: 200px;
+		min-width: 200px;
+		width: 33%;
+	}
+}
+
+.reveal .slides section.title {
+	$margin: 4vmin;
+
+	box-sizing: border-box;
+	color: $white;
+	height: calc(100vh - #{2 * $margin});
+	margin: $margin;
+	margin-left: 30vw;
+	padding: 0;
+	text-align: left;
+	width: calc(100vw - #{$margin} - 30vw);
+
+	@media (#{$viewport-small}) {
+		$margin: 2vmin;
+
+		height: calc(100vh - #{2 * $margin});
+		margin: $margin;
+		width: calc(100vw - #{2 * $margin});
+	}
+
+	.grid-wrapper {
+		box-sizing: border-box;
+		grid-template-columns: unquote("[one]") 50% unquote("[two]") 40%;
+		grid-template-rows: unquote("[logo]") 20% unquote("[title]") auto unquote("[credit]") auto;
+		grid-column-gap: 10%;
+		grid-row-gap: 10%;
+		height: 100%;
+		padding: 10vmin;
+	}
+
+	.logo {
+		background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
+		background-repeat: no-repeat;
+		background-size: 40px 40px;
+		grid-column: one;
+		grid-row: logo;
+		height: 40px;
+		width: 40px;
+	}
+
+	h1 {
+		color: $white;
+		grid-row: title;
+	}
+
+	.description {
+		grid-column: two;
+		grid-row: title;
+	}
+
+	.credit {
+		align-self: end;
+		grid-column: two;
+		grid-row: credit;
+		line-height: 1.8em;
+
+		hr {
+			border: solid $light-grey;
+			border-width: 1px 0 0 0;
+			margin: 0 0 .8em 0;
+			width: 20%;
+		}
+		.label {
+			font-size: 60%;
+			text-transform: uppercase;
+		}
+		.name {
+			font-weight: bold;
+		}
+		.role {
+
+		}
+	}
+}
+
+.reveal .slides section.subsection {
+	background-color: $white;
+	color: $midnight;
+	height: 100vh;
+	padding: 0;
+	text-align: left;
+	width: 100vw;
+
+	.grid-wrapper {
+		box-sizing: border-box;
+		grid-column-gap: 10%;
+		grid-row-gap: 10%;
+		grid-template-rows: unquote("[logo]") 40px unquote("[title]") auto unquote("[description]") 15%;
+		height: 100%;
+		padding: 10vmin;
+	}
+
+	.logo {
+		background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
+		background-repeat: no-repeat;
+		background-size: 40px 40px;
+		grid-row: logo;
+		height: 40px;
+		width: 40px;
+	}
+
+	h1 {
+		align-self: center;
+		color: $midnight;
+		grid-row: title;
+	}
+
+	.description {
+		grid-row: description;
+	}
+
+	@at-root #{&}--midnight {
+		background-color: $midnight;
+		color: $white;
+
+		.logo {
+			background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
+		}
+		h1 {
+			color: $white;
+		}
+	}
+	@at-root #{&}--ice {
+		background-color: $ice;
+		color: $white;
+
+		.logo {
+			background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
+		}
+		h1 {
+			color: $white;
+		}
+	}
+	@at-root #{&}--radiant {
+		background-color: $radiant;
+		color: $white;
+
+		.logo {
+			background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
+		}
+		h1 {
+			color: $white;
+		}
+	}
+}
