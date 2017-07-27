@@ -290,55 +290,54 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
-.pattern--molecules {
-  background-image: url("../../lib/myplanet/patterns/molecules/pattern.svg");
-  background-size: cover; }
-  .pattern--molecules .slides section.intro {
-    background: #FAFAFA; }
-    .pattern--molecules .slides section.intro .logo {
-      background: url("../../lib/myplanet/patterns/molecules/logo.svg"); }
-  .pattern--molecules .slides section.title {
-    background: #872E27; }
+.reveal[class*="pattern--"] {
+  background-position: center center;
+  background-size: 133vmax auto; }
 
-.pattern--night-sky {
-  background-image: url("../../lib/myplanet/patterns/night-sky/pattern.svg");
-  background-size: cover; }
-  .pattern--night-sky .slides section.intro {
-    background: #DEF9F6; }
-    .pattern--night-sky .slides section.intro .logo {
-      background: url("../../lib/myplanet/patterns/night-sky/logo.svg"); }
-  .pattern--night-sky .slides section.title {
-    background: #0D7D7F; }
+.reveal.pattern--molecules {
+  background-image: url("../../lib/myplanet/patterns/molecules/pattern.svg"); }
+  .reveal.pattern--molecules .slides section.intro {
+    background-color: #FAFAFA; }
+    .reveal.pattern--molecules .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/molecules/logo.svg"); }
+  .reveal.pattern--molecules .slides section.title {
+    background-color: #872E27; }
 
-.pattern--orange-river {
-  background-image: url("../../lib/myplanet/patterns/orange-river/pattern.svg");
-  background-size: cover; }
-  .pattern--orange-river .slides section.intro {
-    background: #FFEDE9; }
-    .pattern--orange-river .slides section.intro .logo {
-      background: url("../../lib/myplanet/patterns/orange-river/logo.svg"); }
-  .pattern--orange-river .slides section.title {
-    background: #872E27; }
+.reveal.pattern--night-sky {
+  background-image: url("../../lib/myplanet/patterns/night-sky/pattern.svg"); }
+  .reveal.pattern--night-sky .slides section.intro {
+    background-color: #DEF9F6; }
+    .reveal.pattern--night-sky .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/night-sky/logo.svg"); }
+  .reveal.pattern--night-sky .slides section.title {
+    background-color: #0D7D7F; }
 
-.pattern--playground {
-  background-image: url("../../lib/myplanet/patterns/playground/pattern.svg");
-  background-size: cover; }
-  .pattern--playground .slides section.intro {
-    background: #FCECDB; }
-    .pattern--playground .slides section.intro .logo {
-      background: url("../../lib/myplanet/patterns/playground/logo.svg"); }
-  .pattern--playground .slides section.title {
-    background: #8E3E28; }
+.reveal.pattern--orange-river {
+  background-image: url("../../lib/myplanet/patterns/orange-river/pattern.svg"); }
+  .reveal.pattern--orange-river .slides section.intro {
+    background-color: #FFEDE9; }
+    .reveal.pattern--orange-river .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/orange-river/logo.svg"); }
+  .reveal.pattern--orange-river .slides section.title {
+    background-color: #872E27; }
 
-.pattern--stream {
-  background-image: url("../../lib/myplanet/patterns/stream/pattern.svg");
-  background-size: cover; }
-  .pattern--stream .slides section.intro {
-    background: #DEF9F6; }
-    .pattern--stream .slides section.intro .logo {
-      background: url("../../lib/myplanet/patterns/stream/logo.svg"); }
-  .pattern--stream .slides section.title {
-    background: #0D7D7F; }
+.reveal.pattern--playground {
+  background-image: url("../../lib/myplanet/patterns/playground/pattern.svg"); }
+  .reveal.pattern--playground .slides section.intro {
+    background-color: #FCECDB; }
+    .reveal.pattern--playground .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/playground/logo.svg"); }
+  .reveal.pattern--playground .slides section.title {
+    background-color: #8E3E28; }
+
+.reveal.pattern--stream {
+  background-image: url("../../lib/myplanet/patterns/stream/pattern.svg"); }
+  .reveal.pattern--stream .slides section.intro {
+    background-color: #DEF9F6; }
+    .reveal.pattern--stream .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/stream/logo.svg"); }
+  .reveal.pattern--stream .slides section.title {
+    background-color: #0D7D7F; }
 
 .grid-wrapper {
   display: grid; }

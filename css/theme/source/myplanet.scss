@@ -76,20 +76,24 @@ $patterns: (
 	),
 );
 
+.reveal[class*="pattern--"] {
+	background-position: center center;
+	background-size: 133vmax auto;
+}
+
 @each $pattern-name, $pattern-settings in $patterns {
-	.pattern--#{$pattern-name} {
+	.reveal.pattern--#{$pattern-name} {
 		background-image: url('../../lib/myplanet/patterns/#{$pattern-name}/pattern.svg');
-		background-size: cover;
 
 		.slides section.intro {
-			background: map-get($pattern-settings, 'intro-bg');
+			background-color: map-get($pattern-settings, 'intro-bg');
 
 			.logo {
-				background: url("../../lib/myplanet/patterns/#{$pattern-name}/logo.svg");
+				background-image: url("../../lib/myplanet/patterns/#{$pattern-name}/logo.svg");
 			}
 		}
 		.slides section.title {
-			background: map-get($pattern-settings, 'title-bg');
+			background-color: map-get($pattern-settings, 'title-bg');
 		}
 	}
 }
