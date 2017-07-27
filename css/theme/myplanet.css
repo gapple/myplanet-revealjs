@@ -302,7 +302,10 @@ body {
   background-size: 133vmax auto; }
 
 .reveal.pattern--molecules {
-  background-image: url("../../lib/myplanet/patterns/molecules/pattern.svg"); }
+  background-image: url("../../lib/myplanet/patterns/molecules/pattern.svg");
+  /*********************************************
+		 * NAVIGATION CONTROLS
+		*********************************************/ }
   .reveal.pattern--molecules .slides section.intro {
     background-color: #FAFAFA; }
     .reveal.pattern--molecules .slides section.intro .logo {
@@ -311,9 +314,32 @@ body {
     background-color: #872E27; }
   .reveal.pattern--molecules .progress span {
     background: #872E27; }
+  .reveal.pattern--molecules .controls .navigate-left,
+  .reveal.pattern--molecules .controls .navigate-left.enabled {
+    border-right-color: #872E27; }
+  .reveal.pattern--molecules .controls .navigate-right,
+  .reveal.pattern--molecules .controls .navigate-right.enabled {
+    border-left-color: #872E27; }
+  .reveal.pattern--molecules .controls .navigate-up,
+  .reveal.pattern--molecules .controls .navigate-up.enabled {
+    border-bottom-color: #872E27; }
+  .reveal.pattern--molecules .controls .navigate-down,
+  .reveal.pattern--molecules .controls .navigate-down.enabled {
+    border-top-color: #872E27; }
+  .reveal.pattern--molecules .controls .navigate-left.enabled:hover {
+    border-right-color: #c24238; }
+  .reveal.pattern--molecules .controls .navigate-right.enabled:hover {
+    border-left-color: #c24238; }
+  .reveal.pattern--molecules .controls .navigate-up.enabled:hover {
+    border-bottom-color: #c24238; }
+  .reveal.pattern--molecules .controls .navigate-down.enabled:hover {
+    border-top-color: #c24238; }
 
 .reveal.pattern--night-sky {
-  background-image: url("../../lib/myplanet/patterns/night-sky/pattern.svg"); }
+  background-image: url("../../lib/myplanet/patterns/night-sky/pattern.svg");
+  /*********************************************
+		 * NAVIGATION CONTROLS
+		*********************************************/ }
   .reveal.pattern--night-sky .slides section.intro {
     background-color: #DEF9F6; }
     .reveal.pattern--night-sky .slides section.intro .logo {
@@ -322,9 +348,32 @@ body {
     background-color: #0D7D7F; }
   .reveal.pattern--night-sky .progress span {
     background: #0D7D7F; }
+  .reveal.pattern--night-sky .controls .navigate-left,
+  .reveal.pattern--night-sky .controls .navigate-left.enabled {
+    border-right-color: #0D7D7F; }
+  .reveal.pattern--night-sky .controls .navigate-right,
+  .reveal.pattern--night-sky .controls .navigate-right.enabled {
+    border-left-color: #0D7D7F; }
+  .reveal.pattern--night-sky .controls .navigate-up,
+  .reveal.pattern--night-sky .controls .navigate-up.enabled {
+    border-bottom-color: #0D7D7F; }
+  .reveal.pattern--night-sky .controls .navigate-down,
+  .reveal.pattern--night-sky .controls .navigate-down.enabled {
+    border-top-color: #0D7D7F; }
+  .reveal.pattern--night-sky .controls .navigate-left.enabled:hover {
+    border-right-color: #14c1c4; }
+  .reveal.pattern--night-sky .controls .navigate-right.enabled:hover {
+    border-left-color: #14c1c4; }
+  .reveal.pattern--night-sky .controls .navigate-up.enabled:hover {
+    border-bottom-color: #14c1c4; }
+  .reveal.pattern--night-sky .controls .navigate-down.enabled:hover {
+    border-top-color: #14c1c4; }
 
 .reveal.pattern--orange-river {
-  background-image: url("../../lib/myplanet/patterns/orange-river/pattern.svg"); }
+  background-image: url("../../lib/myplanet/patterns/orange-river/pattern.svg");
+  /*********************************************
+		 * NAVIGATION CONTROLS
+		*********************************************/ }
   .reveal.pattern--orange-river .slides section.intro {
     background-color: #FFEDE9; }
     .reveal.pattern--orange-river .slides section.intro .logo {
@@ -333,9 +382,32 @@ body {
     background-color: #872E27; }
   .reveal.pattern--orange-river .progress span {
     background: #872E27; }
+  .reveal.pattern--orange-river .controls .navigate-left,
+  .reveal.pattern--orange-river .controls .navigate-left.enabled {
+    border-right-color: #872E27; }
+  .reveal.pattern--orange-river .controls .navigate-right,
+  .reveal.pattern--orange-river .controls .navigate-right.enabled {
+    border-left-color: #872E27; }
+  .reveal.pattern--orange-river .controls .navigate-up,
+  .reveal.pattern--orange-river .controls .navigate-up.enabled {
+    border-bottom-color: #872E27; }
+  .reveal.pattern--orange-river .controls .navigate-down,
+  .reveal.pattern--orange-river .controls .navigate-down.enabled {
+    border-top-color: #872E27; }
+  .reveal.pattern--orange-river .controls .navigate-left.enabled:hover {
+    border-right-color: #c24238; }
+  .reveal.pattern--orange-river .controls .navigate-right.enabled:hover {
+    border-left-color: #c24238; }
+  .reveal.pattern--orange-river .controls .navigate-up.enabled:hover {
+    border-bottom-color: #c24238; }
+  .reveal.pattern--orange-river .controls .navigate-down.enabled:hover {
+    border-top-color: #c24238; }
 
 .reveal.pattern--playground {
-  background-image: url("../../lib/myplanet/patterns/playground/pattern.svg"); }
+  background-image: url("../../lib/myplanet/patterns/playground/pattern.svg");
+  /*********************************************
+		 * NAVIGATION CONTROLS
+		*********************************************/ }
   .reveal.pattern--playground .slides section.intro {
     background-color: #FCECDB; }
     .reveal.pattern--playground .slides section.intro .logo {
@@ -344,9 +416,32 @@ body {
     background-color: #8E3E28; }
   .reveal.pattern--playground .progress span {
     background: #8E3E28; }
+  .reveal.pattern--playground .controls .navigate-left,
+  .reveal.pattern--playground .controls .navigate-left.enabled {
+    border-right-color: #8E3E28; }
+  .reveal.pattern--playground .controls .navigate-right,
+  .reveal.pattern--playground .controls .navigate-right.enabled {
+    border-left-color: #8E3E28; }
+  .reveal.pattern--playground .controls .navigate-up,
+  .reveal.pattern--playground .controls .navigate-up.enabled {
+    border-bottom-color: #8E3E28; }
+  .reveal.pattern--playground .controls .navigate-down,
+  .reveal.pattern--playground .controls .navigate-down.enabled {
+    border-top-color: #8E3E28; }
+  .reveal.pattern--playground .controls .navigate-left.enabled:hover {
+    border-right-color: #c8593b; }
+  .reveal.pattern--playground .controls .navigate-right.enabled:hover {
+    border-left-color: #c8593b; }
+  .reveal.pattern--playground .controls .navigate-up.enabled:hover {
+    border-bottom-color: #c8593b; }
+  .reveal.pattern--playground .controls .navigate-down.enabled:hover {
+    border-top-color: #c8593b; }
 
 .reveal.pattern--stream {
-  background-image: url("../../lib/myplanet/patterns/stream/pattern.svg"); }
+  background-image: url("../../lib/myplanet/patterns/stream/pattern.svg");
+  /*********************************************
+		 * NAVIGATION CONTROLS
+		*********************************************/ }
   .reveal.pattern--stream .slides section.intro {
     background-color: #DEF9F6; }
     .reveal.pattern--stream .slides section.intro .logo {
@@ -355,6 +450,26 @@ body {
     background-color: #0D7D7F; }
   .reveal.pattern--stream .progress span {
     background: #0D7D7F; }
+  .reveal.pattern--stream .controls .navigate-left,
+  .reveal.pattern--stream .controls .navigate-left.enabled {
+    border-right-color: #0D7D7F; }
+  .reveal.pattern--stream .controls .navigate-right,
+  .reveal.pattern--stream .controls .navigate-right.enabled {
+    border-left-color: #0D7D7F; }
+  .reveal.pattern--stream .controls .navigate-up,
+  .reveal.pattern--stream .controls .navigate-up.enabled {
+    border-bottom-color: #0D7D7F; }
+  .reveal.pattern--stream .controls .navigate-down,
+  .reveal.pattern--stream .controls .navigate-down.enabled {
+    border-top-color: #0D7D7F; }
+  .reveal.pattern--stream .controls .navigate-left.enabled:hover {
+    border-right-color: #14c1c4; }
+  .reveal.pattern--stream .controls .navigate-right.enabled:hover {
+    border-left-color: #14c1c4; }
+  .reveal.pattern--stream .controls .navigate-up.enabled:hover {
+    border-bottom-color: #14c1c4; }
+  .reveal.pattern--stream .controls .navigate-down.enabled:hover {
+    border-top-color: #14c1c4; }
 
 .grid-wrapper {
   display: grid; }
@@ -367,6 +482,14 @@ body {
 .reveal .slides > section > section.past,
 .reveal .slides > section > section.future {
   opacity: 1; }
+
+.reveal .controls {
+  right: 4vmin;
+  bottom: 4vmin; }
+  @media (max-width: 768px) {
+    .reveal .controls {
+      right: 2vmin;
+      bottom: 2vmin; } }
 
 .reveal .slides section {
   box-sizing: border-box;

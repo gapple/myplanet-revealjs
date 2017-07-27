@@ -109,6 +109,38 @@ body {
 		.progress span {
 			background: map-get($pattern-settings, 'title-bg');
 		}
+
+		/*********************************************
+		 * NAVIGATION CONTROLS
+		*********************************************/
+		.controls .navigate-left,
+		.controls .navigate-left.enabled {
+			border-right-color: map-get($pattern-settings, 'title-bg');
+		}
+		.controls .navigate-right,
+		.controls .navigate-right.enabled {
+			border-left-color: map-get($pattern-settings, 'title-bg');
+		}
+		.controls .navigate-up,
+		.controls .navigate-up.enabled {
+			border-bottom-color: map-get($pattern-settings, 'title-bg');
+		}
+		.controls .navigate-down,
+		.controls .navigate-down.enabled {
+			border-top-color: map-get($pattern-settings, 'title-bg');
+		}
+		.controls .navigate-left.enabled:hover {
+			border-right-color: lighten( map-get($pattern-settings, 'title-bg'), 15% );
+		}
+		.controls .navigate-right.enabled:hover {
+			border-left-color: lighten( map-get($pattern-settings, 'title-bg'), 15% );
+		}
+		.controls .navigate-up.enabled:hover {
+			border-bottom-color: lighten( map-get($pattern-settings, 'title-bg'), 15% );
+		}
+		.controls .navigate-down.enabled:hover {
+			border-top-color: lighten( map-get($pattern-settings, 'title-bg'), 15% );
+		}
 	}
 }
 
@@ -124,6 +156,15 @@ body {
 .reveal .slides > section > section.past,
 .reveal .slides > section > section.future {
 	opacity: 1;
+}
+.reveal .controls {
+	right: 4vmin;
+	bottom: 4vmin;
+
+	@media (#{$viewport-small}) {
+		right: 2vmin;
+		bottom: 2vmin;
+	}
 }
 
 .reveal .slides section {
