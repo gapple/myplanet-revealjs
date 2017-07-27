@@ -383,10 +383,10 @@ body {
   color: #FFFFFF;
   height: calc(100vh - 8vmin);
   margin: 4vmin;
-  margin-left: 30vw;
+  margin-left: 22vw;
   padding: 0;
   text-align: left;
-  width: calc(100vw - 4vmin - 30vw); }
+  width: calc(100vw - 4vmin - 22vw); }
   @media (max-width: 768px) {
     .reveal .slides section.title {
       height: calc(100vh - 4vmin);
@@ -394,30 +394,27 @@ body {
       width: calc(100vw - 4vmin); } }
   .reveal .slides section.title .grid-wrapper {
     box-sizing: border-box;
-    grid-template-columns: [one] 50% [two] 40%;
-    grid-template-rows: [logo] 20% [title] auto [credit] auto;
-    grid-column-gap: 10%;
-    grid-row-gap: 10%;
+    grid-template-areas: "logo ." "content content" ". credit";
+    grid-template-columns: auto 40%;
+    grid-template-rows: 40px 1fr auto;
+    grid-column-gap: 10vmin;
     height: 100%;
     padding: 10vmin; }
   .reveal .slides section.title .logo {
     background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
     background-repeat: no-repeat;
     background-size: 40px 40px;
-    grid-column: one;
-    grid-row: logo;
+    grid-area: logo;
     height: 40px;
     width: 40px; }
+  .reveal .slides section.title .content {
+    align-self: center;
+    grid-area: content; }
   .reveal .slides section.title h1 {
-    color: #FFFFFF;
-    grid-row: title; }
-  .reveal .slides section.title .description {
-    grid-column: two;
-    grid-row: title; }
+    color: #FFFFFF; }
   .reveal .slides section.title .credit {
     align-self: end;
-    grid-column: two;
-    grid-row: credit;
+    grid-area: credit;
     line-height: 1.8em; }
     .reveal .slides section.title .credit hr {
       border: solid #EEEDEF;
@@ -429,6 +426,17 @@ body {
       text-transform: uppercase; }
     .reveal .slides section.title .credit .name {
       font-weight: bold; }
+  @media (min-width: 1280px) {
+    .reveal .slides section.title .content {
+      display: grid;
+      grid-template-areas: "title description";
+      grid-template-columns: auto 40%;
+      grid-column-gap: 10vmin; }
+    .reveal .slides section.title h1 {
+      grid-area: title; }
+    .reveal .slides section.title .description {
+      grid-area: description;
+      margin-top: 0.5em; } }
 
 .reveal .slides section.subsection {
   background-color: #FFFFFF;
@@ -439,24 +447,27 @@ body {
   width: 100vw; }
   .reveal .slides section.subsection .grid-wrapper {
     box-sizing: border-box;
+    grid-template-areas: "logo" "title" "description";
     grid-column-gap: 10%;
-    grid-row-gap: 10%;
-    grid-template-rows: [logo] 40px [title] auto [description] 15%;
+    grid-template-rows: 40px 1fr auto;
     height: 100%;
     padding: 10vmin; }
   .reveal .slides section.subsection .logo {
     background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
     background-repeat: no-repeat;
     background-size: 40px 40px;
-    grid-row: logo;
+    grid-area: logo;
     height: 40px;
     width: 40px; }
   .reveal .slides section.subsection h1 {
     align-self: center;
     color: #2A2A49;
-    grid-row: title; }
+    grid-area: title;
+    margin: 0; }
   .reveal .slides section.subsection .description {
-    grid-row: description; }
+    color: #9292A8;
+    grid-area: description;
+    min-height: 4em; }
   .reveal .slides section.subsection--midnight {
     background-color: #2A2A49;
     color: #FFFFFF; }
@@ -464,6 +475,8 @@ body {
       background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
     .reveal .slides section.subsection--midnight h1 {
       color: #FFFFFF; }
+    .reveal .slides section.subsection--midnight .description {
+      color: #EEEDEF; }
   .reveal .slides section.subsection--ice {
     background-color: #9292A8;
     color: #FFFFFF; }
@@ -471,6 +484,8 @@ body {
       background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
     .reveal .slides section.subsection--ice h1 {
       color: #FFFFFF; }
+    .reveal .slides section.subsection--ice .description {
+      color: #EEEDEF; }
   .reveal .slides section.subsection--radiant {
     background-color: #F25930;
     color: #FFFFFF; }
@@ -478,6 +493,8 @@ body {
       background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
     .reveal .slides section.subsection--radiant h1 {
       color: #FFFFFF; }
+    .reveal .slides section.subsection--radiant .description {
+      color: #EEEDEF; }
 
 .reveal .slides section.end {
   background-color: #EEEDEF;
