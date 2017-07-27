@@ -397,7 +397,7 @@ body {
       width: calc(100vw - 4vmin); } }
   .reveal .slides section.title .grid-wrapper {
     box-sizing: border-box;
-    grid-template-areas: "logo ." "content content" ". credit";
+    grid-template-areas: "header ." "content content" ". credit";
     grid-template-columns: auto 40%;
     grid-template-rows: 40px 1fr auto;
     grid-column-gap: 10vmin;
@@ -407,7 +407,7 @@ body {
     background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
     background-repeat: no-repeat;
     background-size: 40px 40px;
-    grid-area: logo;
+    grid-area: header;
     height: 40px;
     width: 40px; }
   .reveal .slides section.title .content {
@@ -450,7 +450,7 @@ body {
   width: 100vw; }
   .reveal .slides section.subsection .grid-wrapper {
     box-sizing: border-box;
-    grid-template-areas: "logo" "title" "description";
+    grid-template-areas: "header" "title" "description";
     grid-column-gap: 10%;
     grid-template-rows: 40px 1fr auto;
     height: 100%;
@@ -459,7 +459,7 @@ body {
     background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
     background-repeat: no-repeat;
     background-size: 40px 40px;
-    grid-area: logo;
+    grid-area: header;
     height: 40px;
     width: 40px; }
   .reveal .slides section.subsection h1 {

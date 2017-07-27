@@ -178,7 +178,7 @@ $patterns: (
 	.grid-wrapper {
 		box-sizing: border-box;
 		grid-template-areas:
-			"logo ."
+			"header ."
 			"content content"
 			". credit";
 		grid-template-columns: auto 40%;
@@ -192,7 +192,7 @@ $patterns: (
 		background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
 		background-repeat: no-repeat;
 		background-size: 40px 40px;
-		grid-area: logo;
+		grid-area: header;
 		height: 40px;
 		width: 40px;
 	}
@@ -256,7 +256,7 @@ $patterns: (
 
 	.grid-wrapper {
 		box-sizing: border-box;
-		grid-template-areas: "logo" "title" "description";
+		grid-template-areas: "header" "title" "description";
 		grid-column-gap: 10%;
 		grid-template-rows: 40px 1fr auto;
 		height: 100%;
@@ -267,7 +267,7 @@ $patterns: (
 		background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
 		background-repeat: no-repeat;
 		background-size: 40px 40px;
-		grid-area: logo;
+		grid-area: header;
 		height: 40px;
 		width: 40px;
 	}
