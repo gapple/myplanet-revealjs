@@ -538,6 +538,7 @@ body {
     font-size: 2em;
     font-style: normal;
     margin: 0;
+    max-width: 42ex;
     padding: 0;
     width: 100%; }
   .reveal .slides section.quote hr {
