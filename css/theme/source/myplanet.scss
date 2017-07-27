@@ -17,7 +17,7 @@ $backgroundColor: #fff;
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFontSize: 16px;
+$mainFontSize: 2.3vmin;
 $mainFont: 'Poppins', 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'Poppins', 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
@@ -75,6 +75,12 @@ $patterns: (
 		'title-bg': #0D7D7F,
 	),
 );
+
+@media (#{$viewport-small}) {
+	.reveal {
+		font-size: 16px;
+	}
+}
 
 .reveal[class*="pattern--"] {
 	background-position: center center;
