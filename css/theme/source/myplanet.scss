@@ -108,11 +108,19 @@ $patterns: (
 	display: grid;
 }
 
+.reveal .slides {
+	text-align: left;
+}
 .reveal .slides > section.past,
 .reveal .slides > section.future,
 .reveal .slides > section > section.past,
 .reveal .slides > section > section.future {
 	opacity: 1;
+}
+
+.reveal .slides section {
+	box-sizing: border-box;
+	padding: 0;
 }
 
 .reveal section img {
@@ -122,21 +130,24 @@ $patterns: (
 	margin: 0;
 }
 
-.reveal .slides section.intro {
-	$margin: 4vmin;
-
-	box-sizing: border-box;
-	height: calc(100vh - #{2 * $margin});
-	margin: $margin;
-	padding: 0;
-	width: calc(100vw - #{2 * $margin});
-
-	@media (#{$viewport-small}) {
-		$margin: 2vmin;
-
+@mixin section ($margin: 0) {
+	@if ($margin == 0) {
+		height: 100vh;
+		margin: 0;
+		width: 100vw;
+	}
+	@else {
 		height: calc(100vh - #{2 * $margin});
 		margin: $margin;
-		width: calc(100vw - #{2 * $margin});
+		width: calc(100vw - #{2* $margin});
+	}
+}
+
+.reveal .slides section.intro {
+	@include section(4vmin);
+
+	@media (#{$viewport-small}) {
+		@include section(2vmin);
 	}
 
 	.logo-wrapper {
@@ -156,23 +167,14 @@ $patterns: (
 }
 
 .reveal .slides section.title {
-	$margin: 4vmin;
+	@include section(4vmin);
 
-	box-sizing: border-box;
 	color: $white;
-	height: calc(100vh - #{2 * $margin});
-	margin: $margin;
 	margin-left: 22vw;
-	padding: 0;
-	text-align: left;
-	width: calc(100vw - #{$margin} - 22vw);
+	width: calc(100vw - 4vmin - 22vw);
 
 	@media (#{$viewport-small}) {
-		$margin: 2vmin;
-
-		height: calc(100vh - #{2 * $margin});
-		margin: $margin;
-		width: calc(100vw - #{2 * $margin});
+		@include section(2vmin);
 	}
 
 	.grid-wrapper {
@@ -247,12 +249,12 @@ $patterns: (
 }
 
 .reveal .slides section.subsection {
+	@include section();
+
 	background-color: $white;
 	color: $midnight;
-	height: 100vh;
 	padding: 0;
 	text-align: left;
-	width: 100vw;
 
 	.grid-wrapper {
 		box-sizing: border-box;
@@ -330,12 +332,10 @@ $patterns: (
 }
 
 .reveal .slides section.end {
+	@include section();
+
 	background-color: $light-grey;
 	color: $midnight;
-	height: 100vh;
-	padding: 0;
-	text-align: left;
-	width: 100vw;
 
 	.logo-wrapper {
 		display: flex;

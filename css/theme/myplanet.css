@@ -346,11 +346,18 @@ body {
 .grid-wrapper {
   display: grid; }
 
+.reveal .slides {
+  text-align: left; }
+
 .reveal .slides > section.past,
 .reveal .slides > section.future,
 .reveal .slides > section > section.past,
 .reveal .slides > section > section.future {
   opacity: 1; }
+
+.reveal .slides section {
+  box-sizing: border-box;
+  padding: 0; }
 
 .reveal section img {
   background: none;
@@ -359,10 +366,8 @@ body {
   margin: 0; }
 
 .reveal .slides section.intro {
-  box-sizing: border-box;
   height: calc(100vh - 8vmin);
   margin: 4vmin;
-  padding: 0;
   width: calc(100vw - 8vmin); }
   @media (max-width: 768px) {
     .reveal .slides section.intro {
@@ -382,13 +387,11 @@ body {
     width: 33%; }
 
 .reveal .slides section.title {
-  box-sizing: border-box;
-  color: #FFFFFF;
   height: calc(100vh - 8vmin);
   margin: 4vmin;
+  width: calc(100vw - 8vmin);
+  color: #FFFFFF;
   margin-left: 22vw;
-  padding: 0;
-  text-align: left;
   width: calc(100vw - 4vmin - 22vw); }
   @media (max-width: 768px) {
     .reveal .slides section.title {
@@ -442,12 +445,13 @@ body {
       margin-top: 0.5em; } }
 
 .reveal .slides section.subsection {
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
   background-color: #FFFFFF;
   color: #2A2A49;
-  height: 100vh;
   padding: 0;
-  text-align: left;
-  width: 100vw; }
+  text-align: left; }
   .reveal .slides section.subsection .grid-wrapper {
     box-sizing: border-box;
     grid-template-areas: "header" "title" "description";
@@ -500,12 +504,11 @@ body {
       color: #EEEDEF; }
 
 .reveal .slides section.end {
-  background-color: #EEEDEF;
-  color: #2A2A49;
   height: 100vh;
-  padding: 0;
-  text-align: left;
-  width: 100vw; }
+  margin: 0;
+  width: 100vw;
+  background-color: #EEEDEF;
+  color: #2A2A49; }
   .reveal .slides section.end .logo-wrapper {
     display: flex;
     height: 100%; }
