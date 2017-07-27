@@ -578,6 +578,9 @@ body {
       text-transform: uppercase; }
     .reveal .slides section.title .credit .name {
       font-weight: bold; }
+  @media (max-width: 568px) {
+    .reveal .slides section.title .grid-wrapper {
+      grid-template-columns: auto 60%; } }
   @media (min-width: 1280px) {
     .reveal .slides section.title .content {
       display: grid;

@@ -291,6 +291,12 @@ body {
 		}
 	}
 
+	@media (#{$viewport-tiny}) {
+		.grid-wrapper {
+			grid-template-columns: auto 60%;
+		}
+	}
+
 	@media (#{$viewport-wide}) {
 		.content {
 			display: grid;
