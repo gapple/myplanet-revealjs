@@ -290,3 +290,36 @@ $patterns: (
 		}
 	}
 }
+
+.reveal .slides section.end {
+	background-color: $light-grey;
+	color: $midnight;
+	height: 100vh;
+	padding: 0;
+	text-align: left;
+	width: 100vw;
+
+	.logo-wrapper {
+		display: flex;
+		height: 100%;
+	}
+
+	.logo {
+		background: url("../../lib/myplanet/logo/radiant-orange/logo-outline.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin: auto;
+		min-height: 200px;
+		min-width: 200px;
+		width: 33%;
+	}
+
+	@at-root #{&}--radiant {
+		background-color: $radiant;
+
+		.logo {
+			background-image: url("../../lib/myplanet/logo/white/logo-outline.svg");
+		}
+	}
+}

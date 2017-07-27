@@ -478,3 +478,27 @@ body {
       background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
     .reveal .slides section.subsection--radiant h1 {
       color: #FFFFFF; }
+
+.reveal .slides section.end {
+  background-color: #EEEDEF;
+  color: #2A2A49;
+  height: 100vh;
+  padding: 0;
+  text-align: left;
+  width: 100vw; }
+  .reveal .slides section.end .logo-wrapper {
+    display: flex;
+    height: 100%; }
+  .reveal .slides section.end .logo {
+    background: url("../../lib/myplanet/logo/radiant-orange/logo-outline.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+    min-height: 200px;
+    min-width: 200px;
+    width: 33%; }
+  .reveal .slides section.end--radiant {
+    background-color: #F25930; }
+    .reveal .slides section.end--radiant .logo {
+      background-image: url("../../lib/myplanet/logo/white/logo-outline.svg"); }
