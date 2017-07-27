@@ -240,7 +240,7 @@ body {
 	.grid-wrapper {
 		box-sizing: border-box;
 		grid-template-areas:
-			"header ."
+			"header header"
 			"content content"
 			". credit";
 		grid-template-columns: auto 40%;
@@ -293,7 +293,10 @@ body {
 
 	@media (#{$viewport-tiny}) {
 		.grid-wrapper {
-			grid-template-columns: auto 60%;
+			grid-template-columns: auto 80%;
+		}
+		.credit {
+			justify-self: end;
 		}
 	}
 

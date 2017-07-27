@@ -546,7 +546,7 @@ body {
       width: calc(100vw - 4vmin); } }
   .reveal .slides section.title .grid-wrapper {
     box-sizing: border-box;
-    grid-template-areas: "header ." "content content" ". credit";
+    grid-template-areas: "header header" "content content" ". credit";
     grid-template-columns: auto 40%;
     grid-template-rows: 40px 1fr auto;
     grid-column-gap: 10vmin;
@@ -580,7 +580,9 @@ body {
       font-weight: bold; }
   @media (max-width: 568px) {
     .reveal .slides section.title .grid-wrapper {
-      grid-template-columns: auto 60%; } }
+      grid-template-columns: auto 80%; }
+    .reveal .slides section.title .credit {
+      justify-self: end; } }
   @media (min-width: 1280px) {
     .reveal .slides section.title .content {
       display: grid;
