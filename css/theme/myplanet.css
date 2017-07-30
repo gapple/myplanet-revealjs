@@ -475,6 +475,46 @@ body {
   .reveal.pattern--stream .controls .navigate-down.enabled:hover {
     border-top-color: #14c1c4; }
 
+.reveal .slides section.color--dark {
+  background-color: #22272B;
+  color: #EEEDEF; }
+  .reveal .slides section.color--dark .logo {
+    background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
+  .reveal .slides section.color--dark h1 {
+    color: #EEEDEF; }
+
+.reveal .slides section.color--ice {
+  background-color: #9292A8;
+  color: #FFFFFF; }
+  .reveal .slides section.color--ice .logo {
+    background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
+  .reveal .slides section.color--ice h1 {
+    color: #FFFFFF; }
+
+.reveal .slides section.color--light {
+  background-color: #FFFFFF;
+  color: #66646B; }
+  .reveal .slides section.color--light .logo {
+    background-image: url("../../lib/myplanet/logo/black/mark-outline.svg"); }
+  .reveal .slides section.color--light h1 {
+    color: #66646B; }
+
+.reveal .slides section.color--midnight {
+  background-color: #2A2A49;
+  color: #FFFFFF; }
+  .reveal .slides section.color--midnight .logo {
+    background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
+  .reveal .slides section.color--midnight h1 {
+    color: #FFFFFF; }
+
+.reveal .slides section.color--radiant {
+  background-color: #F25930;
+  color: #FFFFFF; }
+  .reveal .slides section.color--radiant .logo {
+    background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
+  .reveal .slides section.color--radiant h1 {
+    color: #FFFFFF; }
+
 .grid-wrapper {
   display: grid; }
 
@@ -513,7 +553,15 @@ body {
   height: 100vh;
   margin: 0;
   width: 100vw;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  color: #2A2A49; }
+  .reveal .slides section .logo {
+    background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    grid-area: header;
+    height: 40px;
+    width: 40px; }
 
 .reveal .slides section.intro {
   height: calc(100vh - 8vmin);
@@ -603,10 +651,7 @@ body {
 .reveal .slides section.subsection {
   height: 100vh;
   margin: 0;
-  width: 100vw;
-  background-color: #FFFFFF;
-  color: #2A2A49;
-  text-align: left; }
+  width: 100vw; }
   .reveal .slides section.subsection .grid-wrapper {
     box-sizing: border-box;
     grid-template-areas: "header" "title" "description";
@@ -614,56 +659,21 @@ body {
     grid-template-rows: 40px 1fr auto;
     height: 100%;
     padding: 10vmin; }
-  .reveal .slides section.subsection .logo {
-    background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    grid-area: header;
-    height: 40px;
-    width: 40px; }
   .reveal .slides section.subsection h1 {
     align-self: center;
-    color: #2A2A49;
     grid-area: title;
     margin: 0; }
   .reveal .slides section.subsection .description {
     color: #9292A8;
     grid-area: description;
     min-height: 4em; }
-  .reveal .slides section.subsection--midnight {
-    background-color: #2A2A49;
-    color: #FFFFFF; }
-    .reveal .slides section.subsection--midnight .logo {
-      background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-    .reveal .slides section.subsection--midnight h1 {
-      color: #FFFFFF; }
-    .reveal .slides section.subsection--midnight .description {
-      color: #EEEDEF; }
-  .reveal .slides section.subsection--ice {
-    background-color: #9292A8;
-    color: #FFFFFF; }
-    .reveal .slides section.subsection--ice .logo {
-      background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-    .reveal .slides section.subsection--ice h1 {
-      color: #FFFFFF; }
-    .reveal .slides section.subsection--ice .description {
-      color: #EEEDEF; }
-  .reveal .slides section.subsection--radiant {
-    background-color: #F25930;
-    color: #FFFFFF; }
-    .reveal .slides section.subsection--radiant .logo {
-      background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-    .reveal .slides section.subsection--radiant h1 {
-      color: #FFFFFF; }
-    .reveal .slides section.subsection--radiant .description {
-      color: #EEEDEF; }
+  .reveal .slides section.subsection.color--midnight .description, .reveal .slides section.subsection.color--ice .description, .reveal .slides section.subsection.color--radiant .description {
+    color: #EEEDEF; }
 
 .reveal .slides section.quote {
   height: 100vh;
   margin: 0;
   width: 100vw;
-  background-color: #FFFFFF;
-  color: #2A2A49;
   text-align: left; }
   .reveal .slides section.quote .grid-wrapper {
     box-sizing: border-box;
@@ -671,13 +681,6 @@ body {
     grid-template-rows: 40px 1fr;
     height: 100%;
     padding: 10vmin; }
-  .reveal .slides section.quote .logo {
-    background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
-    background-repeat: no-repeat;
-    background-size: 40px 40px;
-    grid-area: header;
-    height: 40px;
-    width: 40px; }
   .reveal .slides section.quote blockquote {
     align-self: center;
     background: none;
@@ -699,46 +702,17 @@ body {
     color: #9292A8;
     display: block;
     font-size: 1rem; }
-  .reveal .slides section.quote--midnight {
-    background-color: #2A2A49;
+  .reveal .slides section.quote.color--midnight blockquote, .reveal .slides section.quote.color--ice blockquote, .reveal .slides section.quote.color--radiant blockquote {
     color: #FFFFFF; }
-    .reveal .slides section.quote--midnight .logo {
-      background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-    .reveal .slides section.quote--midnight blockquote {
-      color: #FFFFFF; }
-    .reveal .slides section.quote--midnight hr {
-      border-color: #EEEDEF; }
-    .reveal .slides section.quote--midnight cite {
-      color: #EEEDEF; }
-  .reveal .slides section.quote--ice {
-    background-color: #9292A8;
-    color: #FFFFFF; }
-    .reveal .slides section.quote--ice .logo {
-      background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-    .reveal .slides section.quote--ice blockquote {
-      color: #FFFFFF; }
-    .reveal .slides section.quote--ice hr {
-      border-color: #EEEDEF; }
-    .reveal .slides section.quote--ice cite {
-      color: #EEEDEF; }
-  .reveal .slides section.quote--radiant {
-    background-color: #F25930;
-    color: #FFFFFF; }
-    .reveal .slides section.quote--radiant .logo {
-      background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-    .reveal .slides section.quote--radiant blockquote {
-      color: #FFFFFF; }
-    .reveal .slides section.quote--radiant hr {
-      border-color: #EEEDEF; }
-    .reveal .slides section.quote--radiant cite {
-      color: #EEEDEF; }
+  .reveal .slides section.quote.color--midnight hr, .reveal .slides section.quote.color--ice hr, .reveal .slides section.quote.color--radiant hr {
+    border-color: #EEEDEF; }
+  .reveal .slides section.quote.color--midnight cite, .reveal .slides section.quote.color--ice cite, .reveal .slides section.quote.color--radiant cite {
+    color: #EEEDEF; }
 
 .reveal .slides section.end {
   height: 100vh;
   margin: 0;
-  width: 100vw;
-  background-color: #EEEDEF;
-  color: #2A2A49; }
+  width: 100vw; }
   .reveal .slides section.end .logo-wrapper {
     display: flex;
     height: 100%; }
@@ -751,7 +725,5 @@ body {
     min-height: 200px;
     min-width: 200px;
     width: 33%; }
-  .reveal .slides section.end--radiant {
-    background-color: #F25930; }
-    .reveal .slides section.end--radiant .logo {
-      background-image: url("../../lib/myplanet/logo/white/logo-outline.svg"); }
+  .reveal .slides section.end.color--radiant .logo {
+    background-image: url("../../lib/myplanet/logo/white/logo-outline.svg"); }
