@@ -15,7 +15,7 @@ body {
 
 .reveal {
   font-family: "Poppins", "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 1em;
+  font-size: inherit;
   font-weight: normal;
   color: #222; }
 
@@ -290,15 +290,15 @@ body {
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
-body {
-  font-size: 2.3vmin; }
+html {
+  font-size: 2.25vmin; }
 
 @media (max-width: 768px) {
-  body {
+  html {
     font-size: 16px; } }
 
 @media (max-width: 568px) {
-  body {
+  html {
     font-size: 14px; } }
 
 .reveal[class*="pattern--"] {

@@ -17,7 +17,7 @@ $backgroundColor: #fff;
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFontSize: 1em;
+$mainFontSize: inherit;
 $mainFont: 'Poppins', 'Source Sans Pro', Helvetica, sans-serif;
 $headingFont: 'Poppins', 'Source Sans Pro', Helvetica, sans-serif;
 $headingTextShadow: none;
@@ -107,16 +107,16 @@ $colors: (
 );
 
 
-body {
-	font-size: 2.3vmin;
+html {
+	font-size: 2.25vmin;
 }
 @media (#{$viewport-small}) {
-	body {
+	html {
 		font-size: 16px;
 	}
 }
 @media (#{$viewport-tiny}) {
-	body {
+	html {
 		font-size: 14px;
 	}
 }
