@@ -94,20 +94,23 @@ body {
 
 @each $pattern-name, $pattern-settings in $patterns {
 	.reveal.pattern--#{$pattern-name} {
+		$intro-bg: map-get($pattern-settings, 'intro-bg');
+		$title-bg: map-get($pattern-settings, 'title-bg');
+
 		background-image: url('../../lib/myplanet/patterns/#{$pattern-name}/pattern.svg');
 
 		.slides section.intro {
-			background-color: map-get($pattern-settings, 'intro-bg');
+			background-color: $intro-bg;
 
 			.logo {
 				background-image: url("../../lib/myplanet/patterns/#{$pattern-name}/logo.svg");
 			}
 		}
 		.slides section.title {
-			background-color: map-get($pattern-settings, 'title-bg');
+			background-color: $title-bg;
 		}
 		.progress span {
-			background: map-get($pattern-settings, 'title-bg');
+			background: $title-bg;
 		}
 
 		/*********************************************
@@ -115,31 +118,31 @@ body {
 		*********************************************/
 		.controls .navigate-left,
 		.controls .navigate-left.enabled {
-			border-right-color: map-get($pattern-settings, 'title-bg');
+			border-right-color: $title-bg;
 		}
 		.controls .navigate-right,
 		.controls .navigate-right.enabled {
-			border-left-color: map-get($pattern-settings, 'title-bg');
+			border-left-color: $title-bg;
 		}
 		.controls .navigate-up,
 		.controls .navigate-up.enabled {
-			border-bottom-color: map-get($pattern-settings, 'title-bg');
+			border-bottom-color: $title-bg;
 		}
 		.controls .navigate-down,
 		.controls .navigate-down.enabled {
-			border-top-color: map-get($pattern-settings, 'title-bg');
+			border-top-color: $title-bg;
 		}
 		.controls .navigate-left.enabled:hover {
-			border-right-color: lighten( map-get($pattern-settings, 'title-bg'), 15% );
+			border-right-color: lighten( $title-bg, 15% );
 		}
 		.controls .navigate-right.enabled:hover {
-			border-left-color: lighten( map-get($pattern-settings, 'title-bg'), 15% );
+			border-left-color: lighten( $title-bg, 15% );
 		}
 		.controls .navigate-up.enabled:hover {
-			border-bottom-color: lighten( map-get($pattern-settings, 'title-bg'), 15% );
+			border-bottom-color: lighten( $title-bg, 15% );
 		}
 		.controls .navigate-down.enabled:hover {
-			border-top-color: lighten( map-get($pattern-settings, 'title-bg'), 15% );
+			border-top-color: lighten( $title-bg, 15% );
 		}
 	}
 }
