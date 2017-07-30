@@ -86,6 +86,11 @@ body {
 		font-size: 16px;
 	}
 }
+@media (#{$viewport-tiny}) {
+	body {
+		font-size: 14px;
+	}
+}
 
 .reveal[class*="pattern--"] {
 	background-position: center center;

@@ -297,6 +297,10 @@ body {
   body {
     font-size: 16px; } }
 
+@media (max-width: 568px) {
+  body {
+    font-size: 14px; } }
+
 .reveal[class*="pattern--"] {
   background-position: center center;
   background-size: 133vmax auto; }
