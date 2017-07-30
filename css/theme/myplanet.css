@@ -584,7 +584,8 @@ body {
       font-weight: bold; }
   @media (max-width: 568px) {
     .reveal .slides section.title .grid-wrapper {
-      grid-template-columns: auto 80%; }
+      grid-template-areas: "header" "content" "credit";
+      grid-template-columns: auto; }
     .reveal .slides section.title .credit {
       justify-self: end; } }
   @media (min-width: 1280px) {

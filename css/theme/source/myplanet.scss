@@ -301,7 +301,8 @@ body {
 
 	@media (#{$viewport-tiny}) {
 		.grid-wrapper {
-			grid-template-columns: auto 80%;
+			grid-template-areas: "header" "content" "credit";
+			grid-template-columns: auto;
 		}
 		.credit {
 			justify-self: end;
