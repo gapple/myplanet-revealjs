@@ -480,40 +480,30 @@ html {
   color: #EEEDEF; }
   .reveal .slides section.color--dark .logo {
     background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-  .reveal .slides section.color--dark h1 {
-    color: #EEEDEF; }
 
 .reveal .slides section.color--ice {
   background-color: #9292A8;
   color: #FFFFFF; }
   .reveal .slides section.color--ice .logo {
     background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-  .reveal .slides section.color--ice h1 {
-    color: #FFFFFF; }
 
 .reveal .slides section.color--light {
   background-color: #FFFFFF;
   color: #66646B; }
   .reveal .slides section.color--light .logo {
     background-image: url("../../lib/myplanet/logo/black/mark-outline.svg"); }
-  .reveal .slides section.color--light h1 {
-    color: #66646B; }
 
 .reveal .slides section.color--midnight {
   background-color: #2A2A49;
   color: #FFFFFF; }
   .reveal .slides section.color--midnight .logo {
     background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-  .reveal .slides section.color--midnight h1 {
-    color: #FFFFFF; }
 
 .reveal .slides section.color--radiant {
   background-color: #F25930;
   color: #FFFFFF; }
   .reveal .slides section.color--radiant .logo {
     background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
-  .reveal .slides section.color--radiant h1 {
-    color: #FFFFFF; }
 
 .grid-wrapper {
   display: grid; }
@@ -534,6 +524,15 @@ html {
     .reveal .controls {
       right: 2vmin;
       bottom: 2vmin; } }
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin-bottom: 2.5vmin;
+  color: inherit; }
 
 .reveal .slides section {
   box-sizing: border-box;
@@ -557,6 +556,8 @@ html {
   color: #2A2A49; }
   .reveal .slides section .grid-wrapper {
     box-sizing: border-box;
+    grid-column-gap: 10vmin;
+    grid-row-gap: 5vmin;
     grid-template-areas: "header" "content";
     grid-template-rows: 4.5vmin 1fr;
     height: 100%;
@@ -700,6 +701,84 @@ html {
 
 .reveal .slides section.quote.color--midnight cite, .reveal .slides section.quote.color--ice cite, .reveal .slides section.quote.color--radiant cite {
   color: #EEEDEF; }
+
+.reveal .slides section.team .content {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: column;
+  grid-column-gap: 10vmin;
+  grid-row-gap: 5vmin; }
+
+.reveal .slides section.team .profile {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 5vmin; }
+
+.reveal .slides section.team h2 {
+  color: #9292A8;
+  font-size: inherit;
+  margin-bottom: 0.5em; }
+
+.reveal .slides section.team p:first-of-type {
+  margin-top: 0; }
+
+.reveal .slides section.team p:last-of-type {
+  margin-bottom: 0; }
+
+.reveal .slides section.team img {
+  display: block;
+  max-width: none;
+  max-height: 100%;
+  width: 100%; }
+
+.reveal .slides section.team .name {
+  margin: 0.6em 0; }
+
+.reveal .slides section.team .role {
+  color: #9292A8;
+  font-size: 0.8em;
+  margin: 0.6em 0; }
+
+.reveal .slides section.team .supplement {
+  font-size: .8em;
+  color: #9292A8; }
+
+@media (max-width: 768px) {
+  .reveal .slides section.team .content {
+    grid-auto-flow: row; } }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .reveal .slides section.team .content {
+    grid-auto-flow: column; }
+  .reveal .slides section.team .profile {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5vmin; }
+  .reveal .slides section.team .details {
+    display: none; }
+  .reveal .slides section.team img {
+    max-height: 50%;
+    max-width: 50%;
+    height: auto;
+    width: auto; } }
+
+@media (max-width: 568px) {
+  .reveal .slides section.team .content {
+    grid-auto-flow: row; }
+  .reveal .slides section.team .profile {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5vmin; }
+  .reveal .slides section.team .details {
+    display: none; }
+  .reveal .slides section.team img {
+    max-height: 50%;
+    max-width: 50%;
+    height: auto;
+    width: auto; } }
 
 .reveal .slides section.end {
   height: 100vh;

@@ -195,10 +195,6 @@ html {
 		.logo {
 			background-image: url("../../lib/myplanet/logo/#{$logo}/mark-outline.svg");
 		}
-
-		h1 {
-			color: $fg;
-		}
 	}
 }
 
@@ -223,6 +219,16 @@ html {
 		right: 2vmin;
 		bottom: 2vmin;
 	}
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	margin-bottom: 2.5vmin;
+	color: inherit;
 }
 
 .reveal .slides section {
@@ -263,6 +269,8 @@ html {
 
 	.grid-wrapper {
 		box-sizing: border-box;
+		grid-column-gap: $slidePadding;
+		grid-row-gap: $slidePadding/2;
 		grid-template-areas: "header" "content";
 		grid-template-rows: $headerLogoHeight 1fr;
 		height: 100%;
@@ -459,6 +467,110 @@ html {
 		}
 		cite {
 			color: $light-grey;
+		}
+	}
+}
+
+.reveal .slides section.team {
+
+	.content {
+		display: grid;
+		grid-auto-columns: 1fr;
+		grid-auto-rows: 1fr;
+		grid-auto-flow: column;
+		grid-column-gap: $slidePadding;
+		grid-row-gap: $slidePadding/2;
+	}
+
+	.profile {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-column-gap: $slidePadding/2;
+	}
+
+	h2 {
+		color: $ice;
+		font-size: inherit;
+		margin-bottom: 0.5em;
+	}
+	p:first-of-type {
+		margin-top: 0;
+	}
+	p:last-of-type {
+		margin-bottom: 0;
+	};
+
+	img {
+		display: block;
+		max-width: none;
+		max-height: 100%;
+		width: 100%;
+	}
+	.name {
+		margin: 0.6em 0;
+	}
+
+	.role {
+		color: $ice;
+		font-size: 0.8em;
+		margin: 0.6em 0;
+	}
+
+	.supplement {
+		font-size: .8em;
+		color: $ice;
+	}
+
+	@media ($viewport-small) {
+		.content {
+			grid-auto-flow: row;
+		}
+	}
+
+	@media ($viewport-small) and (orientation: landscape) {
+		.content {
+			grid-auto-flow: column;
+		}
+
+		.profile {
+			align-items: center;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-column-gap: $slidePadding/2;
+		}
+
+		.details {
+			display: none;
+		}
+
+		img {
+			max-height: 50%;
+			max-width: 50%;
+			height: auto;
+			width: auto;
+		}
+	}
+
+	@media ($viewport-tiny) {
+		.content {
+			grid-auto-flow: row;
+		}
+		.profile {
+			align-items: center;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-column-gap: $slidePadding/2;
+		}
+
+		.details {
+			display: none;
+		}
+
+		img {
+			max-height: 50%;
+			max-width: 50%;
+			height: auto;
+			width: auto;
 		}
 	}
 }
