@@ -262,10 +262,11 @@ html {
 	.logo {
 		background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
 		background-repeat: no-repeat;
-		background-size: 40px 40px;
+		background-size: 6vmin 6vmin;
+		display: inline-block;
 		grid-area: header;
-		height: 40px;
-		width: 40px;
+		height: 6vmin;
+		width: 6vmin;
 	}
 }
 
@@ -283,8 +284,8 @@ html {
 
 	.logo {
 		background-position: center;
-		background-repeat: no-repeat;
 		background-size: contain;
+		height: auto;
 		margin: auto;
 		min-height: 200px;
 		min-width: 200px;
@@ -310,7 +311,7 @@ html {
 			"content content"
 			". credit";
 		grid-template-columns: auto 40%;
-		grid-template-rows: 40px 1fr auto;
+		grid-template-rows: 6vmin 1fr auto;
 		grid-column-gap: 10vmin;
 		height: 100%;
 		padding: 10vmin;
@@ -318,11 +319,6 @@ html {
 
 	.logo {
 		background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
-		background-repeat: no-repeat;
-		background-size: 40px 40px;
-		grid-area: header;
-		height: 40px;
-		width: 40px;
 	}
 
 	.content {
@@ -391,7 +387,7 @@ html {
 		box-sizing: border-box;
 		grid-template-areas: "header" "title" "description";
 		grid-column-gap: 10%;
-		grid-template-rows: 40px 1fr auto;
+		grid-template-rows: 6vmin 1fr auto;
 		height: 100%;
 		padding: 10vmin;
 	}
@@ -425,7 +421,7 @@ html {
 	.grid-wrapper {
 		box-sizing: border-box;
 		grid-template-areas: "header" "content";
-		grid-template-rows: 40px 1fr ;
+		grid-template-rows: 6vmin 1fr ;
 		height: 100%;
 		padding: 10vmin;
 	}
@@ -479,10 +475,10 @@ html {
 	}
 
 	.logo {
-		background: url("../../lib/myplanet/logo/radiant-orange/logo-outline.svg");
+		background-image: url("../../lib/myplanet/logo/radiant-orange/logo-outline.svg");
 		background-position: center;
-		background-repeat: no-repeat;
 		background-size: contain;
+		height: auto;
 		margin: auto;
 		min-height: 200px;
 		min-width: 200px;
