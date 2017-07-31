@@ -106,6 +106,8 @@ $colors: (
 	),
 );
 
+$headerLogoHeight: 4.5vmin;
+$slidePadding: 10vmin;
 
 html {
 	font-size: 2.25vmin;
@@ -259,14 +261,26 @@ html {
 	background: $white;
 	color: $midnight;
 
+	.grid-wrapper {
+		box-sizing: border-box;
+		grid-template-areas: "header" "content";
+		grid-template-rows: $headerLogoHeight 1fr;
+		height: 100%;
+		padding: $slidePadding;
+	}
+
 	.logo {
 		background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
 		background-repeat: no-repeat;
-		background-size: 6vmin 6vmin;
+		background-size: auto 100%;
 		display: inline-block;
 		grid-area: header;
-		height: 6vmin;
-		width: 6vmin;
+		height: $headerLogoHeight;
+		width: $headerLogoHeight;
+	}
+
+	.content {
+		align-self: center;
 	}
 }
 
@@ -305,20 +319,19 @@ html {
 	}
 
 	.grid-wrapper {
-		box-sizing: border-box;
 		grid-template-areas:
 			"header header"
 			"content content"
 			". credit";
 		grid-template-columns: auto 40%;
 		grid-template-rows: 6vmin 1fr auto;
-		grid-column-gap: 10vmin;
-		height: 100%;
-		padding: 10vmin;
+		grid-column-gap: $slidePadding;
 	}
 
 	.logo {
 		background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
+		height: 6vmin;
+		width: 6vmin;
 	}
 
 	.content {
@@ -368,7 +381,7 @@ html {
 			display: grid;
 			grid-template-areas: "title description";
 			grid-template-columns: auto 40%;
-			grid-column-gap: 10vmin;
+			grid-column-gap: $slidePadding;
 		}
 		h1 {
 			grid-area: title;
@@ -381,15 +394,10 @@ html {
 }
 
 .reveal .slides section.subsection {
-	@include section();
 
 	.grid-wrapper {
-		box-sizing: border-box;
 		grid-template-areas: "header" "title" "description";
-		grid-column-gap: 10%;
-		grid-template-rows: 6vmin 1fr auto;
-		height: 100%;
-		padding: 10vmin;
+		grid-template-rows: $headerLogoHeight 3fr 1fr;
 	}
 
 	h1 {
@@ -414,17 +422,6 @@ html {
 }
 
 .reveal .slides section.quote {
-	@include section();
-
-	text-align: left;
-
-	.grid-wrapper {
-		box-sizing: border-box;
-		grid-template-areas: "header" "content";
-		grid-template-rows: 6vmin 1fr ;
-		height: 100%;
-		padding: 10vmin;
-	}
 
 	blockquote {
 		align-self: center;

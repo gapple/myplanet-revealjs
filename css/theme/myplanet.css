@@ -555,14 +555,22 @@ html {
   width: 100vw;
   background: #FFFFFF;
   color: #2A2A49; }
+  .reveal .slides section .grid-wrapper {
+    box-sizing: border-box;
+    grid-template-areas: "header" "content";
+    grid-template-rows: 4.5vmin 1fr;
+    height: 100%;
+    padding: 10vmin; }
   .reveal .slides section .logo {
     background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
     background-repeat: no-repeat;
-    background-size: 6vmin 6vmin;
+    background-size: auto 100%;
     display: inline-block;
     grid-area: header;
-    height: 6vmin;
-    width: 6vmin; }
+    height: 4.5vmin;
+    width: 4.5vmin; }
+  .reveal .slides section .content {
+    align-self: center; }
 
 .reveal .slides section.intro {
   height: calc(100vh - 8vmin);
@@ -598,15 +606,14 @@ html {
       margin: 2vmin;
       width: calc(100vw - 4vmin); } }
   .reveal .slides section.title .grid-wrapper {
-    box-sizing: border-box;
     grid-template-areas: "header header" "content content" ". credit";
     grid-template-columns: auto 40%;
     grid-template-rows: 6vmin 1fr auto;
-    grid-column-gap: 10vmin;
-    height: 100%;
-    padding: 10vmin; }
+    grid-column-gap: 10vmin; }
   .reveal .slides section.title .logo {
-    background-image: url("../../lib/myplanet/logo/white/mark-outline.svg"); }
+    background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
+    height: 6vmin;
+    width: 6vmin; }
   .reveal .slides section.title .content {
     align-self: center;
     grid-area: content; }
@@ -644,66 +651,55 @@ html {
       grid-area: description;
       margin-top: 0.5em; } }
 
-.reveal .slides section.subsection {
-  height: 100vh;
-  margin: 0;
-  width: 100vw; }
-  .reveal .slides section.subsection .grid-wrapper {
-    box-sizing: border-box;
-    grid-template-areas: "header" "title" "description";
-    grid-column-gap: 10%;
-    grid-template-rows: 6vmin 1fr auto;
-    height: 100%;
-    padding: 10vmin; }
-  .reveal .slides section.subsection h1 {
-    align-self: center;
-    grid-area: title;
-    margin: 0; }
-  .reveal .slides section.subsection .description {
-    color: #9292A8;
-    grid-area: description;
-    min-height: 4em; }
-  .reveal .slides section.subsection.color--midnight .description, .reveal .slides section.subsection.color--ice .description, .reveal .slides section.subsection.color--radiant .description {
-    color: #EEEDEF; }
+.reveal .slides section.subsection .grid-wrapper {
+  grid-template-areas: "header" "title" "description";
+  grid-template-rows: 4.5vmin 3fr 1fr; }
 
-.reveal .slides section.quote {
-  height: 100vh;
+.reveal .slides section.subsection h1 {
+  align-self: center;
+  grid-area: title;
+  margin: 0; }
+
+.reveal .slides section.subsection .description {
+  color: #9292A8;
+  grid-area: description;
+  min-height: 4em; }
+
+.reveal .slides section.subsection.color--midnight .description, .reveal .slides section.subsection.color--ice .description, .reveal .slides section.subsection.color--radiant .description {
+  color: #EEEDEF; }
+
+.reveal .slides section.quote blockquote {
+  align-self: center;
+  background: none;
+  color: #66646B;
+  border: none;
+  box-shadow: none;
+  font-size: 2em;
+  font-style: normal;
   margin: 0;
-  width: 100vw;
-  text-align: left; }
-  .reveal .slides section.quote .grid-wrapper {
-    box-sizing: border-box;
-    grid-template-areas: "header" "content";
-    grid-template-rows: 6vmin 1fr;
-    height: 100%;
-    padding: 10vmin; }
-  .reveal .slides section.quote blockquote {
-    align-self: center;
-    background: none;
-    color: #66646B;
-    border: none;
-    box-shadow: none;
-    font-size: 2em;
-    font-style: normal;
-    margin: 0;
-    max-width: 42ex;
-    padding: 0;
-    width: 100%; }
-  .reveal .slides section.quote hr {
-    border: solid #9292A8;
-    border-width: 1px 0 0 0;
-    margin: .8em 0;
-    width: 10%; }
-  .reveal .slides section.quote cite {
-    color: #9292A8;
-    display: block;
-    font-size: 1rem; }
-  .reveal .slides section.quote.color--midnight blockquote, .reveal .slides section.quote.color--ice blockquote, .reveal .slides section.quote.color--radiant blockquote {
-    color: #FFFFFF; }
-  .reveal .slides section.quote.color--midnight hr, .reveal .slides section.quote.color--ice hr, .reveal .slides section.quote.color--radiant hr {
-    border-color: #EEEDEF; }
-  .reveal .slides section.quote.color--midnight cite, .reveal .slides section.quote.color--ice cite, .reveal .slides section.quote.color--radiant cite {
-    color: #EEEDEF; }
+  max-width: 42ex;
+  padding: 0;
+  width: 100%; }
+
+.reveal .slides section.quote hr {
+  border: solid #9292A8;
+  border-width: 1px 0 0 0;
+  margin: .8em 0;
+  width: 10%; }
+
+.reveal .slides section.quote cite {
+  color: #9292A8;
+  display: block;
+  font-size: 1rem; }
+
+.reveal .slides section.quote.color--midnight blockquote, .reveal .slides section.quote.color--ice blockquote, .reveal .slides section.quote.color--radiant blockquote {
+  color: #FFFFFF; }
+
+.reveal .slides section.quote.color--midnight hr, .reveal .slides section.quote.color--ice hr, .reveal .slides section.quote.color--radiant hr {
+  border-color: #EEEDEF; }
+
+.reveal .slides section.quote.color--midnight cite, .reveal .slides section.quote.color--ice cite, .reveal .slides section.quote.color--radiant cite {
+  color: #EEEDEF; }
 
 .reveal .slides section.end {
   height: 100vh;
