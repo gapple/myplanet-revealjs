@@ -491,7 +491,7 @@ html {
   background-color: #FFFFFF;
   color: #66646B; }
   .reveal .slides section.color--light .logo {
-    background-image: url("../../lib/myplanet/logo/black/mark-outline.svg"); }
+    background-image: url("../../lib/myplanet/logo/ice/mark-outline.svg"); }
 
 .reveal .slides section.color--midnight {
   background-color: #2A2A49;
@@ -562,14 +562,23 @@ html {
     grid-template-rows: 4.5vmin 1fr;
     height: 100%;
     padding: 10vmin; }
+  .reveal .slides section .header {
+    display: flex; }
   .reveal .slides section .logo {
-    background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
+    background-image: url("../../lib/myplanet/logo/ice/mark-outline.svg");
     background-repeat: no-repeat;
     background-size: auto 100%;
     display: inline-block;
     grid-area: header;
     height: 4.5vmin;
+    margin-right: 4.5vmin;
     width: 4.5vmin; }
+  .reveal .slides section .section {
+    color: #9292A8;
+    text-transform: uppercase;
+    line-height: 4.5vmin;
+    font-size: 0.6em;
+    font-weight: bold; }
   .reveal .slides section .content {
     align-self: center; }
 
@@ -665,6 +674,9 @@ html {
   color: #9292A8;
   grid-area: description;
   min-height: 4em; }
+
+.reveal .slides section.subsection:not([class*='color--']) .logo, .reveal .slides section.subsection.color--light .logo {
+  background-image: url("../../lib/myplanet/logo/black/mark-outline.svg"); }
 
 .reveal .slides section.subsection.color--midnight .description, .reveal .slides section.subsection.color--ice .description, .reveal .slides section.subsection.color--radiant .description {
   color: #EEEDEF; }

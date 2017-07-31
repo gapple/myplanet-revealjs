@@ -92,7 +92,7 @@ $colors: (
 	'light': (
 		'bg': $white,
 		'fg': $grey,
-		'logo': 'black',
+		'logo': 'ice',
 	),
 	'midnight': (
 		'bg': $midnight,
@@ -277,14 +277,27 @@ html {
 		padding: $slidePadding;
 	}
 
+	.header {
+		display: flex;
+	}
+
 	.logo {
-		background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
+		background-image: url("../../lib/myplanet/logo/ice/mark-outline.svg");
 		background-repeat: no-repeat;
 		background-size: auto 100%;
 		display: inline-block;
 		grid-area: header;
 		height: $headerLogoHeight;
+		margin-right: $headerLogoHeight;
 		width: $headerLogoHeight;
+	}
+
+	.section {
+		color: $ice;
+		text-transform: uppercase;
+		line-height: $headerLogoHeight;
+		font-size: 0.6em;
+		font-weight: bold;
 	}
 
 	.content {
@@ -420,6 +433,12 @@ html {
 		min-height: 4em;
 	}
 
+	&:not([class*='color--']),
+	&.color--light {
+		.logo {
+			background-image: url("../../lib/myplanet/logo/black/mark-outline.svg");
+		}
+	}
 	&.color--midnight,
 	&.color--ice,
 	&.color--radiant {
