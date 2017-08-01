@@ -503,8 +503,8 @@ html {
 
 	.profile {
 		display: grid;
-		grid-template-columns: 1fr 3fr;
 		grid-column-gap: $slidePadding/2;
+		grid-template-rows: 15vmin 1fr;
 	}
 
 	h2 {
@@ -521,9 +521,10 @@ html {
 
 	img {
 		display: block;
-		max-width: none;
-		max-height: 100%;
-		width: 100%;
+		float: left;
+		height: auto;
+		margin-right: $slidePadding/2;
+		width: auto;
 	}
 	.name {
 		margin: 0.6em 0;
@@ -539,6 +540,19 @@ html {
 		font-size: .8em;
 		color: $ice;
 	}
+	
+	@media ($viewport-wide) {
+		img {
+			float: none;
+			max-width: none;
+			max-height: 100%;
+			width: 100%;
+		}
+		.profile {
+			grid-template-rows: auto;
+			grid-template-columns: 1fr 3fr;
+		}
+	}
 
 	@media ($viewport-small) {
 		.content {
@@ -552,6 +566,7 @@ html {
 		}
 
 		.profile {
+			grid-template-rows: auto;
 			align-items: center;
 			display: grid;
 			grid-template-columns: 1fr;
@@ -563,9 +578,11 @@ html {
 		}
 
 		img {
-			max-height: 50%;
-			max-width: 50%;
+			float: left;
 			height: auto;
+			margin-right: $slidePadding/2;
+			max-height: 50%;
+			max-width: 40%;
 			width: auto;
 		}
 	}
@@ -575,6 +592,7 @@ html {
 			grid-auto-flow: row;
 		}
 		.profile {
+			grid-template-rows: auto;
 			align-items: center;
 			display: grid;
 			grid-template-columns: 1fr;
@@ -586,9 +604,11 @@ html {
 		}
 
 		img {
-			max-height: 50%;
-			max-width: 50%;
+			float: left;
 			height: auto;
+			margin-right: $slidePadding/2;
+			max-height: 50%;
+			max-width: 40%;
 			width: auto;
 		}
 	}

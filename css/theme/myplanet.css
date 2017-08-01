@@ -724,8 +724,8 @@ html {
 
 .reveal .slides section.team .profile {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-column-gap: 5vmin; }
+  grid-column-gap: 5vmin;
+  grid-template-rows: 15vmin 1fr; }
 
 .reveal .slides section.team h2 {
   color: #9292A8;
@@ -740,9 +740,10 @@ html {
 
 .reveal .slides section.team img {
   display: block;
-  max-width: none;
-  max-height: 100%;
-  width: 100%; }
+  float: left;
+  height: auto;
+  margin-right: 5vmin;
+  width: auto; }
 
 .reveal .slides section.team .name {
   margin: 0.6em 0; }
@@ -756,6 +757,16 @@ html {
   font-size: .8em;
   color: #9292A8; }
 
+@media (min-width: 1280px) {
+  .reveal .slides section.team img {
+    float: none;
+    max-width: none;
+    max-height: 100%;
+    width: 100%; }
+  .reveal .slides section.team .profile {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 3fr; } }
+
 @media (max-width: 768px) {
   .reveal .slides section.team .content {
     grid-auto-flow: row; } }
@@ -764,6 +775,7 @@ html {
   .reveal .slides section.team .content {
     grid-auto-flow: column; }
   .reveal .slides section.team .profile {
+    grid-template-rows: auto;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -771,15 +783,18 @@ html {
   .reveal .slides section.team .details {
     display: none; }
   .reveal .slides section.team img {
-    max-height: 50%;
-    max-width: 50%;
+    float: left;
     height: auto;
+    margin-right: 5vmin;
+    max-height: 50%;
+    max-width: 40%;
     width: auto; } }
 
 @media (max-width: 568px) {
   .reveal .slides section.team .content {
     grid-auto-flow: row; }
   .reveal .slides section.team .profile {
+    grid-template-rows: auto;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -787,9 +802,11 @@ html {
   .reveal .slides section.team .details {
     display: none; }
   .reveal .slides section.team img {
-    max-height: 50%;
-    max-width: 50%;
+    float: left;
     height: auto;
+    margin-right: 5vmin;
+    max-height: 50%;
+    max-width: 40%;
     width: auto; } }
 
 .reveal .slides section.end {
