@@ -141,6 +141,42 @@
 						<div class="content"></div>
 					</div>
 				</section>
+				<section class="code color--dark" id="code--path">
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="section">Section</div>
+						</div>
+						<figure class="code">
+							<pre><code class="lang-php">
+								namespace \myplanet\reveal;
+
+								function foo() {
+									echo "bar";
+								}
+							</code></pre>
+							<figcaption class="path">/src/myplanet/reveal/functions.php</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section class="code color--dark" id="code--title">
+					<div class="grid-wrapper">
+						<div class="header">
+							<div class="logo"></div>
+							<div class="section">Section</div>
+						</div>
+						<figure class="code">
+							<figcaption>Title</figcaption>
+							<pre><code class="lang-php">
+								namespace \myplanet\reveal;
+
+								function foo() {
+									echo "bar";
+								}
+							</code></pre>
+						</figure>
+					</div>
+				</section>
 				<!-- Team page can accommodate one or two profiles. -->
 				<section class="team" id="team">
 					<div class="grid-wrapper">
@@ -208,7 +244,29 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{
+						src: 'plugin/highlight/highlight.js',
+						async: true,
+						condition: function () {
+							// Trim whitespace from code blocks, and prevent HTML escaping by default.
+							// This must be done before the plugin is loaded.
+							Array.prototype.forEach.call(
+								document.querySelectorAll('pre code'),
+								function (element) {
+									if (!element.hasAttribute('data-notrim')) {
+										element.setAttribute('data-trim', '');
+									}
+									if (!element.hasAttribute('data-escape')) {
+										element.setAttribute('data-noescape', '');
+									}
+								}
+							);
+							return true;
+						},
+						callback: function () {
+							hljs.initHighlightingOnLoad();
+						}
+					}
 				]
 			});
 		</script>

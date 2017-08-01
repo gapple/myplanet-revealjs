@@ -581,6 +581,8 @@ html {
     font-weight: bold; }
   .reveal .slides section .content {
     align-self: center; }
+  .reveal .slides section.color--dark .section {
+    color: #EEEDEF; }
 
 .reveal .slides section.intro {
   height: calc(100vh - 8vmin);
@@ -827,3 +829,47 @@ html {
     width: 33%; }
   .reveal .slides section.end.color--radiant .logo {
     background-image: url("../../lib/myplanet/logo/white/logo-outline.svg"); }
+
+/*******************************************************************************
+ * Code Segments
+ ******************************************************************************/
+figure.code {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+figure.code pre {
+  box-shadow: none;
+  font-size: 1rem;
+  height: 100%;
+  line-height: 1.1rem;
+  margin: 0;
+  width: 100%;
+  overflow: hidden; }
+
+.reveal pre code {
+  box-sizing: border-box;
+  height: 100%;
+  max-height: none;
+  border: 1ex solid #3f3f3f;
+  border-width: 1ex 2ex;
+  -moz-tab-size: 2;
+  tab-size: 2; }
+
+figure.code figcaption {
+  box-sizing: border-box;
+  padding: 1ex 2ex;
+  width: 100%;
+  font-size: 0.875em;
+  border: 1px solid #3f3f3f;
+  border-bottom-width: 0;
+  background-color: #333;
+  text-align: left; }
+
+figure.code pre + figcaption {
+  border-top-width: 0;
+  border-bottom-width: 1px;
+  color: #EEEDEF; }
+
+figure.code figcaption.path {
+  font-family: monospace; }
