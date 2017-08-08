@@ -301,6 +301,14 @@ html {
   html {
     font-size: 14px; } }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal; }
+
 .reveal[class*="pattern--"] {
   background-position: center center;
   background-size: 133vmax auto; }
@@ -563,7 +571,9 @@ html {
     height: 100%;
     padding: 10vmin; }
   .reveal .slides section .header {
-    display: flex; }
+    align-items: center;
+    display: flex;
+    grid-area: header; }
   .reveal .slides section .logo {
     background-image: url("../../lib/myplanet/logo/ice/mark-outline.svg");
     background-repeat: no-repeat;
@@ -626,6 +636,9 @@ html {
     background-image: url("../../lib/myplanet/logo/white/mark-outline.svg");
     height: 6vmin;
     width: 6vmin; }
+  .reveal .slides section.title .logo--full {
+    background-image: url("../../lib/myplanet/logo/white/logo-outline.svg");
+    width: 24vmin; }
   .reveal .slides section.title .content {
     align-self: center;
     grid-area: content; }
