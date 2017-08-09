@@ -151,6 +151,12 @@
 							<div class="section">Section</div>
 						</div>
 						<figure class="code">
+							<!--
+								Code highlighting is performed by highlight.js
+
+								Leading whitespace is trimmed by default.  Add the data-notrim attribute to the code element to preserve it.
+								If showing an HTML example, add the data-escape attribute to the code element.
+							-->
 							<pre><code class="lang-php">
 								namespace \myplanet\reveal;
 
@@ -158,6 +164,7 @@
 									echo "bar";
 								}
 							</code></pre>
+							<!-- figcaption element is optional, can be placed above or below code -->
 							<figcaption class="path">/src/myplanet/reveal/functions.php</figcaption>
 						</figure>
 					</div>
@@ -169,7 +176,7 @@
 							<div class="section">Section</div>
 						</div>
 						<figure class="code">
-							<figcaption>Title</figcaption>
+							<figcaption>Title</figcaption> <!-- figcaption element is optional -->
 							<pre><code class="lang-php">
 								namespace \myplanet\reveal;
 
