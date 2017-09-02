@@ -590,7 +590,8 @@ html {
     font-size: 0.6em;
     font-weight: bold; }
   .reveal .slides section .content {
-    align-self: center; }
+    align-self: center;
+    grid-area: content; }
   .reveal .slides section.color--dark .section {
     color: #EEEDEF; }
 
