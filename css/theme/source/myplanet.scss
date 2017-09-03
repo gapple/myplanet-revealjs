@@ -273,8 +273,14 @@ html {
 .reveal .slides section {
 	@include section();
 
-	background: $white;
 	color: $midnight;
+
+	&:not([class*='color--']) {
+		background-color: $white;
+	}
+	&.stack {
+		background-color: transparent;
+	}
 
 	.grid-wrapper {
 		box-sizing: border-box;
@@ -304,11 +310,13 @@ html {
 	}
 
 	.section {
-		color: $ice;
 		text-transform: uppercase;
 		line-height: $headerLogoHeight;
 		font-size: 0.6em;
 		font-weight: bold;
+	}
+	&:not([class*="color--"]) .section {
+		color: $ice;
 	}
 
 	.content {

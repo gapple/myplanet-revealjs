@@ -560,8 +560,11 @@ html {
   height: 100vh;
   margin: 0;
   width: 100vw;
-  background: #FFFFFF;
   color: #2A2A49; }
+  .reveal .slides section:not([class*='color--']) {
+    background-color: #FFFFFF; }
+  .reveal .slides section.stack {
+    background-color: transparent; }
   .reveal .slides section .grid-wrapper {
     box-sizing: border-box;
     grid-column-gap: 10vmin;
@@ -584,11 +587,12 @@ html {
     margin-right: 4.5vmin;
     width: 4.5vmin; }
   .reveal .slides section .section {
-    color: #9292A8;
     text-transform: uppercase;
     line-height: 4.5vmin;
     font-size: 0.6em;
     font-weight: bold; }
+  .reveal .slides section:not([class*="color--"]) .section {
+    color: #9292A8; }
   .reveal .slides section .content {
     align-self: center;
     grid-area: content; }
