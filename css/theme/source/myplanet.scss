@@ -714,11 +714,12 @@ figure.code pre {
 	overflow: hidden;
 }
 .reveal pre code {
+	background-color: #3f3f3f;
+	border: 1ex solid #3f3f3f;
+	border-width: 1ex 2ex;
 	box-sizing: border-box;
 	height: 100%;
 	max-height: none;
-	border: 1ex solid #3f3f3f;
-	border-width: 1ex 2ex;
 	-moz-tab-size: 2;
 	tab-size: 2;
 }
