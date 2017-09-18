@@ -519,6 +519,10 @@ html {
 .reveal .slides {
   text-align: left; }
 
+.reveal .slides > section,
+.reveal .slides > section > section {
+  padding: 0; }
+
 .reveal .slides > section.past,
 .reveal .slides > section.future,
 .reveal .slides > section > section.past,
