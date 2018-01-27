@@ -154,40 +154,11 @@ html {
 		.slides section.title {
 			background-color: $title-bg;
 		}
-		.progress span {
-			background: $title-bg;
+		.progress {
+			color: $title-bg;
 		}
-
-		/*********************************************
-		 * NAVIGATION CONTROLS
-		*********************************************/
-		.controls .navigate-left,
-		.controls .navigate-left.enabled {
-			border-right-color: $title-bg;
-		}
-		.controls .navigate-right,
-		.controls .navigate-right.enabled {
-			border-left-color: $title-bg;
-		}
-		.controls .navigate-up,
-		.controls .navigate-up.enabled {
-			border-bottom-color: $title-bg;
-		}
-		.controls .navigate-down,
-		.controls .navigate-down.enabled {
-			border-top-color: $title-bg;
-		}
-		.controls .navigate-left.enabled:hover {
-			border-right-color: lighten( $title-bg, 15% );
-		}
-		.controls .navigate-right.enabled:hover {
-			border-left-color: lighten( $title-bg, 15% );
-		}
-		.controls .navigate-up.enabled:hover {
-			border-bottom-color: lighten( $title-bg, 15% );
-		}
-		.controls .navigate-down.enabled:hover {
-			border-top-color: lighten( $title-bg, 15% );
+		.controls {
+			color: $title-bg;
 		}
 	}
 }
