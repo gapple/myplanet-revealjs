@@ -56,6 +56,10 @@ $ice: #9292A8;
 $midnight: #2A2A49;
 
 $patterns: (
+	'indigo': (
+		'intro-bg': #FAFAFA,
+		'title-bg': #872E27,
+	),
 	'molecules': (
 		'intro-bg': #FAFAFA,
 		'title-bg': #872E27,
@@ -73,6 +77,10 @@ $patterns: (
 		'title-bg': #8E3E28,
 	),
 	'stream': (
+		'intro-bg': #DEF9F6,
+		'title-bg': #0D7D7F,
+	),
+	'synapses': (
 		'intro-bg': #DEF9F6,
 		'title-bg': #0D7D7F,
 	),

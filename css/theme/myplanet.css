@@ -285,6 +285,19 @@ html {
   background-position: center center;
   background-size: 133vmax auto; }
 
+.reveal.pattern--indigo {
+  background-image: url("../../lib/myplanet/patterns/indigo/pattern.svg"); }
+  .reveal.pattern--indigo .slides section.intro {
+    background-color: #FAFAFA; }
+    .reveal.pattern--indigo .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/indigo/logo.svg"); }
+  .reveal.pattern--indigo .slides section.title {
+    background-color: #872E27; }
+  .reveal.pattern--indigo .progress {
+    color: #872E27; }
+  .reveal.pattern--indigo .controls {
+    color: #872E27; }
+
 .reveal.pattern--molecules {
   background-image: url("../../lib/myplanet/patterns/molecules/pattern.svg"); }
   .reveal.pattern--molecules .slides section.intro {
@@ -348,6 +361,19 @@ html {
   .reveal.pattern--stream .progress {
     color: #0D7D7F; }
   .reveal.pattern--stream .controls {
+    color: #0D7D7F; }
+
+.reveal.pattern--synapses {
+  background-image: url("../../lib/myplanet/patterns/synapses/pattern.svg"); }
+  .reveal.pattern--synapses .slides section.intro {
+    background-color: #DEF9F6; }
+    .reveal.pattern--synapses .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/synapses/logo.svg"); }
+  .reveal.pattern--synapses .slides section.title {
+    background-color: #0D7D7F; }
+  .reveal.pattern--synapses .progress {
+    color: #0D7D7F; }
+  .reveal.pattern--synapses .controls {
     color: #0D7D7F; }
 
 .reveal .slides section.color--dark {
