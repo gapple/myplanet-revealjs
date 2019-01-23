@@ -12,6 +12,7 @@
 		'orange-river',
 		'playground',
 		'stream',
+		'stripes',
 		'waves',
 	];
 	document.addEventListener('DOMContentLoaded', function () {

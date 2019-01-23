@@ -372,6 +372,19 @@ html {
   .reveal.pattern--stream .controls {
     color: #0D7D7F; }
 
+.reveal.pattern--stripes {
+  background-image: url("../../lib/myplanet/patterns/stripes/pattern.svg"); }
+  .reveal.pattern--stripes .slides section.intro {
+    background-color: #FFEDE9; }
+    .reveal.pattern--stripes .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/stripes/logo.svg"); }
+  .reveal.pattern--stripes .slides section.title {
+    background-color: #872E27; }
+  .reveal.pattern--stripes .progress {
+    color: #872E27; }
+  .reveal.pattern--stripes .controls {
+    color: #872E27; }
+
 .reveal.pattern--waves {
   background-image: url("../../lib/myplanet/patterns/waves/pattern.svg"); }
   .reveal.pattern--waves .slides section.intro {
