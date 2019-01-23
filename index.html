@@ -16,13 +16,7 @@
 		<link rel="icon" href="lib/myplanet/logo/radiant-orange/mark-knockout.svg"/>
 
 		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		<script src="js/reveal-print.js"></script>
 	</head>
 	<body>
 		<div class="reveal pattern--orange-river">
@@ -152,48 +146,6 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				center: false,
-				width: "100%",
-				height: "100%",
-				margin: 0,
-				minScale: 1,
-				maxScale: 1,
-				history: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{
-						src: 'plugin/highlight/highlight.js',
-						async: true,
-						condition: function () {
-							// Trim whitespace from code blocks, and prevent HTML escaping by default.
-							// This must be done before the plugin is loaded.
-							Array.prototype.forEach.call(
-								document.querySelectorAll('pre code'),
-								function (element) {
-									if (!element.hasAttribute('data-notrim')) {
-										element.setAttribute('data-trim', '');
-									}
-									if (!element.hasAttribute('data-escape')) {
-										element.setAttribute('data-noescape', '');
-									}
-								}
-							);
-							return true;
-						},
-						callback: function () {
-							hljs.initHighlightingOnLoad();
-						}
-					}
-				]
-			});
-		</script>
+		<script src="js/reveal-init.js"></script>
 	</body>
 </html>
