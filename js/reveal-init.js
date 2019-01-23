@@ -15,6 +15,7 @@
 		'quilt',
 		'stream',
 		'stripes',
+		'waterfall',
 		'waves',
 	];
 	document.addEventListener('DOMContentLoaded', function () {

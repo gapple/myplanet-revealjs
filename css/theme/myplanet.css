@@ -411,6 +411,19 @@ html {
   .reveal.pattern--stripes .controls {
     color: #872E27; }
 
+.reveal.pattern--waterfall {
+  background-image: url("../../lib/myplanet/patterns/waterfall/pattern.svg"); }
+  .reveal.pattern--waterfall .slides section.intro {
+    background-color: #DEF9F6; }
+    .reveal.pattern--waterfall .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/waterfall/logo.svg"); }
+  .reveal.pattern--waterfall .slides section.title {
+    background-color: #0D7D7F; }
+  .reveal.pattern--waterfall .progress {
+    color: #0D7D7F; }
+  .reveal.pattern--waterfall .controls {
+    color: #0D7D7F; }
+
 .reveal.pattern--waves {
   background-image: url("../../lib/myplanet/patterns/waves/pattern.svg"); }
   .reveal.pattern--waves .slides section.intro {
