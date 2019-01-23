@@ -6,12 +6,13 @@
 (function () {
 	// Use a random theme if reveal container has 'pattern--random' class.
 	const themes = [
+		'indigo',
 		'molecules',
 		'night-sky',
 		'orange-river',
 		'playground',
 		'stream',
-		'indigo'
+		'waves',
 	];
 	document.addEventListener('DOMContentLoaded', function () {
 		const reveal = document.getElementsByClassName('reveal').item(0);
