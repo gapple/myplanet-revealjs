@@ -6,6 +6,7 @@
 (function () {
 	// Use a random theme if reveal container has 'pattern--random' class.
 	const themes = [
+		'hills',
 		'indigo',
 		'molecules',
 		'night-sky',

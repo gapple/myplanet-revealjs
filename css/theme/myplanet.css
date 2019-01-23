@@ -294,6 +294,19 @@ html {
   background-position: center center;
   background-size: 133vmax auto; }
 
+.reveal.pattern--hills {
+  background-image: url("../../lib/myplanet/patterns/hills/pattern.svg"); }
+  .reveal.pattern--hills .slides section.intro {
+    background-color: #FAFAFA; }
+    .reveal.pattern--hills .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/hills/logo.svg"); }
+  .reveal.pattern--hills .slides section.title {
+    background-color: #872E27; }
+  .reveal.pattern--hills .progress {
+    color: #872E27; }
+  .reveal.pattern--hills .controls {
+    color: #872E27; }
+
 .reveal.pattern--indigo {
   background-image: url("../../lib/myplanet/patterns/indigo/pattern.svg"); }
   .reveal.pattern--indigo .slides section.intro {
