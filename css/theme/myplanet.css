@@ -372,6 +372,19 @@ html {
   .reveal.pattern--playground .controls {
     color: #8E3E28; }
 
+.reveal.pattern--pop {
+  background-image: url("../../lib/myplanet/patterns/pop/pattern.svg"); }
+  .reveal.pattern--pop .slides section.intro {
+    background-color: #FFEDE9; }
+    .reveal.pattern--pop .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/pop/logo.svg"); }
+  .reveal.pattern--pop .slides section.title {
+    background-color: #872E27; }
+  .reveal.pattern--pop .progress {
+    color: #872E27; }
+  .reveal.pattern--pop .controls {
+    color: #872E27; }
+
 .reveal.pattern--quilt {
   background-image: url("../../lib/myplanet/patterns/quilt/pattern.svg"); }
   .reveal.pattern--quilt .slides section.intro {

@@ -12,6 +12,7 @@
 		'orange-river',
 		'palette',
 		'playground',
+		'pop',
 		'quilt',
 		'stream',
 		'stripes',
