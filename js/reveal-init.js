@@ -11,6 +11,7 @@
 		'night-sky',
 		'orange-river',
 		'playground',
+		'quilt',
 		'stream',
 		'stripes',
 		'waves',

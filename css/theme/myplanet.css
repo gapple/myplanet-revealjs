@@ -359,6 +359,19 @@ html {
   .reveal.pattern--playground .controls {
     color: #8E3E28; }
 
+.reveal.pattern--quilt {
+  background-image: url("../../lib/myplanet/patterns/quilt/pattern.svg"); }
+  .reveal.pattern--quilt .slides section.intro {
+    background-color: #DEF9F6; }
+    .reveal.pattern--quilt .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/quilt/logo.svg"); }
+  .reveal.pattern--quilt .slides section.title {
+    background-color: #0D7D7F; }
+  .reveal.pattern--quilt .progress {
+    color: #0D7D7F; }
+  .reveal.pattern--quilt .controls {
+    color: #0D7D7F; }
+
 .reveal.pattern--stream {
   background-image: url("../../lib/myplanet/patterns/stream/pattern.svg"); }
   .reveal.pattern--stream .slides section.intro {
