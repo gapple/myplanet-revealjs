@@ -4,6 +4,31 @@
  */
 
 (function () {
+	// Use a random theme if reveal container has 'pattern--random' class.
+	const themes = [
+		'molecules',
+		'night-sky',
+		'orange-river',
+		'playground',
+		'stream',
+		'indigo'
+	];
+	document.addEventListener('DOMContentLoaded', function () {
+		const reveal = document.getElementsByClassName('reveal').item(0);
+		if (!reveal.classList.contains('pattern--random')) {
+			return;
+		}
+
+		reveal.classList.forEach(function (value) {
+			if (value.substr(0, 7) === 'pattern') {
+				reveal.classList.remove(value);
+			}
+		});
+		const index = Math.floor(Math.random() * themes.length);
+		reveal.classList.add('pattern--' + themes[index]);
+	});
+
+
 	// More info about config & dependencies:
 	// - https://github.com/hakimel/reveal.js#configuration
 	// - https://github.com/hakimel/reveal.js#dependencies
