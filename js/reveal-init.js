@@ -10,6 +10,7 @@
 		'molecules',
 		'night-sky',
 		'orange-river',
+		'palette',
 		'playground',
 		'quilt',
 		'stream',

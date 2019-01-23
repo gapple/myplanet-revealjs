@@ -346,6 +346,19 @@ html {
   .reveal.pattern--orange-river .controls {
     color: #872E27; }
 
+.reveal.pattern--palette {
+  background-image: url("../../lib/myplanet/patterns/palette/pattern.svg"); }
+  .reveal.pattern--palette .slides section.intro {
+    background-color: #FFEDE9; }
+    .reveal.pattern--palette .slides section.intro .logo {
+      background-image: url("../../lib/myplanet/patterns/palette/logo.svg"); }
+  .reveal.pattern--palette .slides section.title {
+    background-color: #872E27; }
+  .reveal.pattern--palette .progress {
+    color: #872E27; }
+  .reveal.pattern--palette .controls {
+    color: #872E27; }
+
 .reveal.pattern--playground {
   background-image: url("../../lib/myplanet/patterns/playground/pattern.svg"); }
   .reveal.pattern--playground .slides section.intro {
