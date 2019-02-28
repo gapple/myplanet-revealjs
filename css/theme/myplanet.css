@@ -45,7 +45,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: "Poppins", "Source Sans Pro", Helvetica, sans-serif;
+  font-family: inherit;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
